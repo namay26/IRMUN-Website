@@ -11,6 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "animate.css": "^4.1.1",
     "vue": "^3.5.12"
   },
   "devDependencies": {
