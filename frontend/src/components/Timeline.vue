@@ -4,25 +4,25 @@
     <img src="@/assets/Flake2.png" class="flake2" />
     <div class="time">
       <div class="container">
-          <div class="countdown">
-              <h2 class="heading-secondary-time">DAYS</h2>
-              <h1 class="heading-primary-time">00</h1>
-          </div>
-          <span class="heading-primary-time">:</span>
-          <div class="countdown">
-              <h2 class="heading-secondary-time">HOURS</h2>
-              <h1 class="heading-primary-time">00</h1>
-          </div>
-          <span class="heading-primary-time">:</span>
-          <div class="countdown">
-              <h2 class="heading-secondary-time">MINUTES</h2>
-              <h1 class="heading-primary-time">00</h1>
-          </div>
-          <span class="heading-primary-time">:</span>
-          <div class="countdown">
-              <h2 class="heading-secondary-time">SECONDS</h2>
-              <h1 class="heading-primary-time">00</h1>
-          </div>
+        <div class="countdown">
+          <h2 class="heading-secondary-time">DAYS</h2>
+          <h1 class="heading-primary-time">00</h1>
+        </div>
+        <span class="heading-primary-time">:</span>
+        <div class="countdown">
+          <h2 class="heading-secondary-time">HOURS</h2>
+          <h1 class="heading-primary-time">00</h1>
+        </div>
+        <span class="heading-primary-time">:</span>
+        <div class="countdown">
+          <h2 class="heading-secondary-time">MINUTES</h2>
+          <h1 class="heading-primary-time">00</h1>
+        </div>
+        <span class="heading-primary-time">:</span>
+        <div class="countdown">
+          <h2 class="heading-secondary-time">SECONDS</h2>
+          <h1 class="heading-primary-time">00</h1>
+        </div>
       </div>
       <div>
         <h2 class="heading-secondary-date">17 - 19 January</h2>
@@ -80,9 +80,9 @@
   z-index: 1;
 }
 
-.flake3{
+.flake3 {
   position: absolute;
-  top:185%;
+  top: 185%;
   left: 0;
   z-index: 1;
 }
@@ -95,7 +95,7 @@
   justify-content: space-evenly;
   align-items: center;
   color: white;
-  width:90%;
+  width: 90%;
 }
 
 .heading-secondary-date {
@@ -116,7 +116,7 @@
   font-size: 12rem;
 }
 
-.countdown{
+.countdown {
   display: flex;
   justify-content: center;
   align-items: center;

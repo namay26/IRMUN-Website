@@ -2,6 +2,9 @@
 import Navbar from "@/components/Navbar.vue";
 import Home from "@/components/Home.vue";
 import Timeline from "@/components/Timeline.vue";
+import Committee from "@/components/Committee.vue";
+import Footer from "@/components/Footer.vue";
+
 </script>
 
 <template>
@@ -9,6 +12,8 @@ import Timeline from "@/components/Timeline.vue";
     <Navbar />
     <Home />
     <Timeline />
+    <Committee />
+    <Footer />
   </div>
 </template>
 
@@ -17,7 +22,7 @@ import Timeline from "@/components/Timeline.vue";
 <style scoped>
 
 #app {
-  background-color: #1d1d1d;
+  background: #1E262F;
   min-height: 100vh;
   min-width: 99vw;
 }
