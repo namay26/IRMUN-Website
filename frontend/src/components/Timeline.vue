@@ -141,7 +141,9 @@ export default {
 }
 
 .heading-secondary-date {
-  margin-top: 60%;
+  position: relative;
+  margin-top: 55%;
+  top: -20%;
   font-family: "Iceberg", sans-serif;
   color: white;
   font-size: 7rem;

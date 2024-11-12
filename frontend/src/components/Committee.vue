@@ -4,11 +4,12 @@
     <div class="container">
       <div class="header">COMMITTEES</div>
       <img class="bgcom" src="@/assets/backgroundcom.png"/>
-      <button class="learn-more">LEARN MORE</button>
+      <button class="learn-more" >LEARN MORE</button>
     </div>
     <img src="@/assets/house.png" class="house"/>
   </div>
 </template>
+
 
 <style scoped>
 
@@ -86,6 +87,11 @@
   border: none;
   border-radius: 0.2rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
+
+.learn-more:hover{
+  background-color: #555;
+}
+
 </style>
