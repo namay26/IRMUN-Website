@@ -6,22 +6,22 @@
       <div class="container">
         <div class="countdown">
           <h2 class="heading-secondary-time">DAYS</h2>
-          <h1 class="heading-primary-time">00</h1>
+          <h1 class="heading-primary-time">{{ days }}</h1>
         </div>
         <span class="heading-primary-time">:</span>
         <div class="countdown">
           <h2 class="heading-secondary-time">HOURS</h2>
-          <h1 class="heading-primary-time">00</h1>
+          <h1 class="heading-primary-time">{{ hours }}</h1>
         </div>
         <span class="heading-primary-time">:</span>
         <div class="countdown">
           <h2 class="heading-secondary-time">MINUTES</h2>
-          <h1 class="heading-primary-time">00</h1>
+          <h1 class="heading-primary-time">{{ minutes }}</h1>
         </div>
         <span class="heading-primary-time">:</span>
         <div class="countdown">
           <h2 class="heading-secondary-time">SECONDS</h2>
-          <h1 class="heading-primary-time">00</h1>
+          <h1 class="heading-primary-time">{{ seconds }}</h1>
         </div>
       </div>
       <div>
@@ -31,6 +31,48 @@
     <img src="@/assets/Flake3.png" class="flake3" />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      days: "00",
+      hours: "00",
+      minutes: "00",
+      seconds: "00",
+      eventDate: new Date("2025-01-17T00:00:00"),
+    };
+  },
+  methods: {
+    updateCountdown() {
+      const now = new Date();
+      const timeDifference = this.eventDate - now;
+
+      if (timeDifference <= 0) {
+        this.days = this.hours = this.minutes = this.seconds = "00";
+      } else {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        this.days = String(days).padStart(2, "0");
+        this.hours = String(hours).padStart(2, "0");
+        this.minutes = String(minutes).padStart(2, "0");
+        this.seconds = String(seconds).padStart(2, "0");
+      }
+    },
+  },
+  mounted() {
+    this.updateCountdown();
+    this.countdownInterval = setInterval(this.updateCountdown, 1000);
+  },
+  beforeDestroy() {
+    clearInterval(this.countdownInterval);
+  },
+};
+</script>
+
 
 <style scoped>
 @font-face {
