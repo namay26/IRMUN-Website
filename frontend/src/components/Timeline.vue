@@ -102,6 +102,8 @@ export default {
   background: url("../assets/SnowFall.png") no-repeat center center/cover;
   width: auto;
   height: 100vh;
+  display: flex;
+  position: relative;
 }
 
 .thomso {

@@ -10,10 +10,7 @@ import Footer from "@/components/Footer.vue";
 <template>
   <div id="app">
     <Navbar />
-    <Home />
-    <Timeline />
-    <Committee />
-    <Footer />
+    <router-view />
   </div>
 </template>
 

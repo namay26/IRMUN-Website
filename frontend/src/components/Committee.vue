@@ -94,4 +94,9 @@
   background-color: #555;
 }
 
+.house{
+  top: 65%;
+  position:  absolute;
+}
+
 </style>

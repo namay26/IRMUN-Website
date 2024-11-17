@@ -9,10 +9,23 @@
       </div>
 
     </div>
+    <Timeline />
+    <Committee />
+    <Footer />
   </template>
 
   <script>
-
+    import Timeline from "@/components/Timeline.vue";
+    import Committee from "@/components/Committee.vue";
+    import Footer from "@/components/Footer.vue";
+    export default {
+    name: "Home",
+    components: {
+      Timeline,
+      Committee,
+      Footer
+    },
+  };
   </script>
 
   <style scoped>
