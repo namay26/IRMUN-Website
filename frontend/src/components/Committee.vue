@@ -1,12 +1,13 @@
 <template>
-  <div class="landing-page">
+  <div class="landing-page-2">
     <img src="@/assets/Flake4.png" class="flake4" />
-    <div class="container">
+    <div class="container-2">
       <div class="header">COMMITTEES</div>
       <img class="bgcom" src="@/assets/backgroundcom.png"/>
       <button class="learn-more" >LEARN MORE</button>
     </div>
-    <img src="@/assets/house.png" class="house"/>
+    <div class="house-bg">
+    </div>
   </div>
 </template>
 
@@ -14,29 +15,30 @@
 <style scoped>
 
 
-.landing-page {
+.landing-page-2 {
   background: url("../assets/SnowFall.png") no-repeat center center/cover;
-  width: auto;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
   position: relative;
 }
 
-.house{
-  position: absolute;
-  top:48%;
+.house-bg{
+  background:url("../assets/house.png") no-repeat;
   width:100%;
-  z-index: 999;
+  height: 24rem;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .bgcom{
   width:100%;
 }
 
-.container {
-  margin-top: 12rem;
+
+.container-2 {
+  margin-top: 24rem;
   position: relative;
   width: 50%;
   height: 70%;
@@ -69,7 +71,7 @@
 
 .flake4 {
   position: absolute;
-  top:2%;
+  top:8%;
   right: 0;
   z-index: 1;
 }
@@ -94,9 +96,5 @@
   background-color: #555;
 }
 
-.house{
-  top: 65%;
-  position:  absolute;
-}
 
 </style>

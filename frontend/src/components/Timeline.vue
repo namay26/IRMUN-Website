@@ -1,9 +1,9 @@
 <template>
-  <div class="landing-page">
+  <div class="landing-page-1">
     <img src="@/assets/Group.png" class="flake" />
     <img src="@/assets/Flake2.png" class="flake2" />
     <div class="time">
-      <div class="container">
+      <div class="container-1">
         <div class="countdown">
           <h2 class="heading-secondary-time">DAYS</h2>
           <h1 class="heading-primary-time">{{ days }}</h1>
@@ -24,7 +24,7 @@
           <h1 class="heading-primary-time">{{ seconds }}</h1>
         </div>
       </div>
-      <div>
+      <div class="date">
         <h2 class="heading-secondary-date">17 - 19 January</h2>
       </div>
     </div>
@@ -67,9 +67,6 @@ export default {
     this.updateCountdown();
     this.countdownInterval = setInterval(this.updateCountdown, 1000);
   },
-  beforeDestroy() {
-    clearInterval(this.countdownInterval);
-  },
 };
 </script>
 
@@ -87,7 +84,6 @@ export default {
 
 }
 
-
 .time {
   display: flex;
   justify-content: center;
@@ -95,10 +91,11 @@ export default {
   height: 60%;
   background: url("../assets/thomso.png") no-repeat center bottom;
   background-size: cover;
-  transform: translate(0%, 60%);
+  transform: translate(0%, 80%);
+  z-index: inherit;
 }
 
-.landing-page {
+.landing-page-1 {
   background: url("../assets/SnowFall.png") no-repeat center center/cover;
   width: auto;
   height: 100vh;
@@ -113,26 +110,26 @@ export default {
 
 .flake {
   position: absolute;
-  top: 90%;
+  top: -5%;
   z-index: 1;
 }
 
 .flake2 {
   position: absolute;
-  top: 88%;
   right: 0;
+  top:-5%;
   z-index: 1;
 }
 
 .flake3 {
   position: absolute;
-  top: 185%;
+  top: 95%;
   left: 0;
   z-index: 1;
 }
 
 
-.container {
+.container-1 {
   position: absolute;
   top: -40%;
   display: flex;
@@ -144,8 +141,7 @@ export default {
 
 .heading-secondary-date {
   position: relative;
-  margin-top: 55%;
-  top: -20%;
+  margin-top:72%;
   font-family: "Iceberg", sans-serif;
   color: white;
   font-size: 7rem;

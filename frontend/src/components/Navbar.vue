@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar">
       <img src="@/assets/Nav Bar.png" alt="Navbar Background" class="navbar-bg" />
-      <img src="@/assets/logo.png" alt="Logo" class="logo" />
+      <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="logo" /></router-link>
 
       <div class="nav-links">
           <router-link to="/ca-portal">CA Portal</router-link>
@@ -32,12 +32,12 @@
     justify-content: flex-end;
     color: white;
     z-index: 1000;
-    background-color: white;
+    background-color:  rgb(0, 0, 0,0);
   }
 
   .navbar-bg {
     position: absolute;
-    top: -40px;
+    top:-8em;
     left: 0;
     width: 100%;
     height: auto;

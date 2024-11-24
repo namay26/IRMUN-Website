@@ -1,6 +1,6 @@
 <template>
-  <div class="landing-page">
-    <div class="container">
+  <div class="landing-page-4">
+    <div class="container-3">
       <div class="footer-section">
         <div class="contact-info">
           <img src="../assets/IRMUN Logo.png" alt="IRMUN Logo" class="logo" />
@@ -31,22 +31,19 @@
 </template>
 
 <style scoped>
-.landing-page {
+.landing-page-4 {
+  z-index: 999;
   font-family: "Copperplate", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: bold;
   color: #CFF8FE;
   position: relative;
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
   width: 100%;
-  height: 70vh;
 }
 
-.container {
-  position: absolute;
-  top: 50%;
+.container-3 {
   width: 100%;
   background-color: #1D1D1D;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -95,6 +92,6 @@ p {
 .contact-details .contact {
   margin-top: 15px;
   padding-top: 10px;
- 
+
 }
 </style>
