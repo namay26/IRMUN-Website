@@ -18,23 +18,23 @@
       </div>
       <div class="offer-items">
         <div class="offer-item">
-          <span class="snowflake">❄️</span>
+          <span class="snowflake"><img src='../assets/1.png'></span>
           <p>Certificate to add in your Resume. You can use this experience to build a portfolio.</p>
         </div>
-        <div class="offer-item">
-          <span class="snowflake">❄️</span>
+        <div class="offer-item sec">
+          <span class="snowflake"><img src='../assets/2.png'></span>
           <p>Campus Ambassador at our fest gets the chance to represent their college in our fest.</p>
         </div>
-        <div class="offer-item">
-          <span class="snowflake">❄️</span>
+        <div class="offer-item third">
+          <span class="snowflake"><img src='../assets/3.png'></span>
           <p>Free entry for the Campus Ambassador on 30+ participation.</p>
         </div>
-        <div class="offer-item">
-          <span class="snowflake">❄️</span>
+        <div class="offer-item fourth">
+          <span class="snowflake"><img src='../assets/4.png'></span>
           <p>You can use this experience to grab internship opportunities from our sponsors.</p>
         </div>
-        <div class="offer-item">
-          <span class="snowflake">❄️</span>
+        <div class="offer-item fifth">
+          <span class="snowflake"><img src='../assets/5.png'></span>
           <p>Free entry to the workshops conducted by our partners.</p>
         </div>
       </div>
@@ -103,48 +103,54 @@
 }
 
 .offer-container {
-  width: 600px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the container */
-  text-align: center;
-  color: white; /* Text color */
-  font-family: Arial, sans-serif; /* Font style */
-}
-
-.heading {
-  background-color: black; /* Black background for the heading */
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.heading h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: white;
-}
-
-.offer-items {
+  width: 90%;
+  margin-top: 12rem;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between items */
+  align-items: center;
+  justify-content: center;
 }
 
-.offer-item {
+.heading{
+  font-family: "Copperplate Gothic", sans-serif;
+  color:white;
+  font-size:2.4rem;
+  font-weight: 400px;
+  border: 2px solid white;
+  border-radius: 16px;
+  width: max-content;
+  padding:0 2%;
+  background-color:#1E262F;
+}
+
+.offer-items{
+  margin-top: 2.4%;
   display: flex;
-  align-items: center; /* Align snowflakes and text vertically */
-  gap: 10px; /* Space between snowflake and text */
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color:white;
+  font-size: 1.8rem;
 }
 
-.snowflake {
-  font-size: 1.5rem; /* Size of the snowflake */
+.offer-item{
+  width: auto;
+  display: flex;
+  align-items: center;
 }
 
-.offer-item p {
-  margin: 0;
-  font-size: 1rem;
-  text-align: left;
+p{
+  margin: 1.6rem;
+  width:50%;
 }
+
+.sec, .fourth{
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 
 </style>
 

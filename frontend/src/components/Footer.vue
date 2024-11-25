@@ -1,5 +1,7 @@
 <template>
   <div class="landing-page-4">
+    <div class="house">
+    </div>
     <div class="container-3">
       <div class="footer-section">
         <div class="contact-info">
@@ -32,6 +34,8 @@
 
 <style scoped>
 .landing-page-4 {
+  background: url("../assets/SnowFall.png") no-repeat center center/cover;
+  background-size:200%;
   z-index: 999;
   font-family: "Copperplate", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: bold;
@@ -92,6 +96,15 @@ p {
 .contact-details .contact {
   margin-top: 15px;
   padding-top: 10px;
-
 }
+
+.house{
+  background:url("../assets/house.png") no-repeat;
+  width:100%;
+  height: 24rem;
+  background-position: center bottom;
+  background-size: cover;
+  z-index: -99;
+}
+
 </style>

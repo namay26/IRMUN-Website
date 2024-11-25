@@ -6,8 +6,6 @@
       <img class="bgcom" src="@/assets/backgroundcom.png"/>
       <button class="learn-more" >LEARN MORE</button>
     </div>
-    <div class="house-bg">
-    </div>
   </div>
 </template>
 
@@ -22,14 +20,6 @@
   align-items: center;
   justify-content:space-evenly;
   position: relative;
-}
-
-.house-bg{
-  background:url("../assets/house.png") no-repeat;
-  width:100%;
-  height: 24rem;
-  background-position: center bottom;
-  background-size: cover;
 }
 
 .bgcom{

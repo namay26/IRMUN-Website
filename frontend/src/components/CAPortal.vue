@@ -10,15 +10,18 @@
 
     </div>
     <CADesc />
+    <Footer />
   </div>
 </template>
 
 <script>
 import CADesc from "@/components/CADesc.vue";
+import Footer from "@/components/Footer.vue";
 export default {
 name: "CAPortal",
 components: {
   CADesc,
+  Footer,
 },
 };
 </script>
