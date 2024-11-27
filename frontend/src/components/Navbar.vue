@@ -37,7 +37,7 @@
 
   .navbar-bg {
     position: absolute;
-    top:-8em;
+    top:-5em;
     left: 0;
     width: 100%;
     height: auto;

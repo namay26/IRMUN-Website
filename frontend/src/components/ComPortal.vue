@@ -36,8 +36,7 @@ components: {
 .landing-page {
   background: url("../assets/Snow Fall Background.png") no-repeat center center/cover;
   width: auto;
-  height: 100vh;
-  position: relative;
+  height: 50vh;
 }
 
 .text-headings {
