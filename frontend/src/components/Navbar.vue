@@ -7,7 +7,7 @@
           <router-link to="/ca-portal">CA Portal</router-link>
           <router-link to="/eb-portal">EB Portal</router-link>
           <router-link to="/committees">Committees</router-link>
-          <router-link to="/faq">FAQ</router-link>
+          <router-link to="/team">Team</router-link>
           <router-link to="/merch">Merch</router-link>
           <button class="register-button">Register</button>
       </div>
