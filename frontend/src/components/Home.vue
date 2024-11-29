@@ -79,6 +79,8 @@
 
 }
 
+
+
 .heading-secondary {
   font-family: "Frozito", sans-serif;
   font-size: 10rem;

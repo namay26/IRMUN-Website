@@ -145,9 +145,66 @@
   background-image: url("../assets/SnowFall.png");
 }
 
-.section {
+.section .team-card{
   margin-top: 1rem;
   z-index: 2;
+  width:350px;
+  height:350px;
+}
+
+.section .team-card img{
+  width:350px;
+  height: 350px;
+  gap:1em;
+  position: relative;
+  overflow: visible;
+  object-fit: fill;
+  transform: translateX(-8%);
+  top:-60px;
+}
+
+.section .textbox {
+  height:300px;
+  width: 130%; 
+  left: -15%; 
+  font-size: 0.1rem;
+  padding:0.6rem;
+  top: -40px;
+}
+
+.section-sub .team-card {
+  margin-top: 1rem;
+  z-index: 2;
+  width:350px;
+  height:350px;
+}
+
+.section-sub .team-grid {
+  display: grid;
+  margin-left: 4rem;
+  grid-template-columns: repeat(4, 1fr); 
+  justify-content: center;
+}
+
+.section-sub .team-card img{
+  width:350px;
+  height: 350px;
+  gap:1em;
+  position: relative;
+  overflow: visible;
+  object-fit: fill;
+  transform: translateX(-4%);
+  top:-50px;
+}
+
+.section-sub .textbox {
+  height:300px;
+  width: 130%; 
+  left: -15%;
+  font-size: 0.1rem;
+  padding:0.6rem;
+  top: -40px;
+  row-gap: 2rem;;
 }
 
 .section1 {
@@ -173,6 +230,43 @@
   letter-spacing: 0.3em;
 }
 
+.section1 .team-card{
+  width:300px;
+  height: 300px;
+}
+
+.section1 .team-grid {
+  display: grid;
+  margin-left: 4rem;
+  grid-template-columns: repeat(4, 1fr); 
+  justify-content: center;
+}
+
+.section1 .team-card img{
+  width:300px;
+  height: 300px;
+  gap:1em;
+  position: relative;
+  overflow: visible;
+  object-fit: fill;
+  transform: translateX(-8%);
+  top:-50px;
+}
+
+.section1 h2{
+  bottom: 20px;
+}
+
+.section1 .textbox {
+  height:300px;
+  width: 130%; 
+  left: -15%; 
+  font-size: 0.1rem;
+  padding:0.6rem;
+  top: -40px;
+  row-gap: 2rem;;
+}
+
 .section2 h2 {
   font-size: 4.5rem; 
   margin-bottom: 1rem; 
@@ -181,6 +275,42 @@
   font-family: "Assassin$", sans-serif;
   letter-spacing: 0.3em;
 }
+
+.section2 .team-card{
+  width:200px;
+  height: 200px;
+}
+
+.section2 .team-grid {
+  display: grid;
+  margin-left: 4rem;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 4rem;
+  row-gap: 8rem; 
+  justify-content: center; 
+}
+
+
+.section2 .team-card img{
+  width:200px;
+  height: 200px;
+  gap:1em;
+  position: relative;
+  overflow: visible;
+  object-fit: fill;
+  transform: translateX(-8%);
+  top:-50px;
+}
+
+.section2 .textbox {
+  height:200px;
+  width: 175%; 
+  left: -37%; 
+  font-size: 0.1rem;
+  padding:0.6rem;
+  top: -40px;
+}
+
 
 .section3 h2 {
   font-size: 4.5rem; 
@@ -193,9 +323,10 @@
 
 .section3 .executives-list {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Copperplate Gothic", sans-serif;
 }
+
 
 .leaders-grid {
   margin-top: 18rem;
@@ -235,8 +366,10 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); 
+  gap: 2rem; 
+  justify-content: center;
+  align-items: start;
 }
 
 .team-card {
@@ -260,12 +393,14 @@
 
 .team-card img {
   width: 300px; 
-  height: 400px; 
-  object-fit: cover; 
+  height: 500px;
+  object-fit:fill;
   border-radius: 8px;
-  margin-bottom: 0.5rem;
 }
 
+.section1, .section2, .section3 {
+  margin-bottom: 5rem; 
+}
 
 .textbox { 
   margin-top: -2rem; 

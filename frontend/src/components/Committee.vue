@@ -28,7 +28,7 @@
 
 
 .container-2 {
-  margin-top: 24rem;
+  margin-top: 40rem;
   position: relative;
   width: 50%;
   height: 70%;

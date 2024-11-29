@@ -55,7 +55,7 @@ components: {
 
   .text-headings {
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -67,12 +67,12 @@ components: {
 
 .heading-primary {
   font-family: "CollegiateBlackFLF", sans-serif;
-  font-size: 19em;
+  font-size: 10em;
 }
 
 .heading-sec {
   font-family: "CollegiateBlackFLF", sans-serif;
-  font-size: 10.6rem;
+  font-size: 9rem;
 
 }
 
