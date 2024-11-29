@@ -1,15 +1,27 @@
 <template>
   <div class="landing-page-2">
       <div class="container 1">
-        <div class="header">UNSC</div>
+        <div class="header">UNSC CCC</div>
         <img class="bgcom" src="@/assets/combg.png" />
       </div>
       <div class="container 2">
-        <div class="header">UNGA</div>
+        <div class="header">DISEC</div>
         <img class="bgcom" src="@/assets/combg.png" />
       </div>
       <div class="container 3">
         <div class="header">AIPPM</div>
+        <img class="bgcom" src="@/assets/combg.png" />
+      </div>
+      <div class="container 2">
+        <div class="header">UNHRC</div>
+        <img class="bgcom" src="@/assets/combg.png" />
+      </div>
+      <div class="container 2">
+        <div class="header">SOCHUM</div>
+        <img class="bgcom" src="@/assets/combg.png" />
+      </div>
+      <div class="container 2">
+        <div class="header">AISM</div>
         <img class="bgcom" src="@/assets/combg.png" />
       </div>
       <div class="container 4">
