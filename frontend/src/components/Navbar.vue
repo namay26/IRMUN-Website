@@ -15,7 +15,7 @@
       <router-link to="/committees">Committees</router-link>
       <router-link to="/team">Team</router-link>
       <router-link to="/merch">Merch</router-link>
-      <button class="register-button">Register</button>
+      <router-link to="/register" style="background-color: aquamarine">Register</router-link>
     </div>
   </nav>
 </template>
