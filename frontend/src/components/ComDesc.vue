@@ -1,37 +1,32 @@
 <template>
   <div class="landing-page-2">
-      <div class="container 1">
-        <div class="header">UNSC CCC</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 2">
-        <div class="header">DISEC</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 3">
-        <div class="header">AIPPM</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 2">
-        <div class="header">UNHRC</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 2">
-        <div class="header">SOCHUM</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 2">
-        <div class="header">AISM</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
-      <div class="container 4">
-        <div class="header">IP</div>
-        <img class="bgcom" src="@/assets/combg.png" />
-      </div>
+    <div class="container 1">
+      <div class="header">UNSC CCC</div>
+    </div>
+    <div class="container 2">
+      <div class="header">DISEC</div>
+    </div>
+    <div class="container 3">
+      <div class="header">AIPPM</div>
+    </div>
+    <div class="container 4">
+      <div class="header">UNHRC</div>
+
+    </div>
+    <div class="container 5">
+      <div class="header">SOCHUM</div>
+    </div>
+    <div class="container 6">
+      <div class="header">AISM</div>
+    </div>
+    <div class="container 7">
+      <div class="header">IP</div>
+    </div>
   </div>
 </template>
 
 <script>
+export default {};
 </script>
 
 <style scoped>
@@ -45,23 +40,20 @@
 }
 
 .landing-page-2 {
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
-  width: auto;
-  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-
 .container {
   position: relative;
-  width: 50%;
+  width: 60vw;
+  height: 400px;
   margin: 4rem;
-  height: max-content;
-  background: white;
-  border-radius: 1.6rem;
+  background: #fff url("@/assets/combg.png") no-repeat center center scroll;
+  border-radius: 1.6vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -76,13 +68,24 @@
   position: absolute;
   top: -6%;
   width: 60%;
-  height: 30%;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #1E262F;
-  font-size: 3rem;
+  font-size: 3vw;
   border-radius: 1rem;
   border: 0.2rem solid white;
 }
+
+@media (max-width: 425px) {
+  .header{
+    font-size: 5vw;
+    height: 6vh;
+  }
+  .container{
+    height: 300px;
+  }
+}
+
 </style>

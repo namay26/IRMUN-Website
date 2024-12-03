@@ -28,40 +28,39 @@
   };
   </script>
 
-  <style scoped>
+<style scoped>
+@font-face {
+  font-family: "Frozito";
+  src: url("@/assets/fonts/Frozito.ttf") format("truetype");
+}
 
-  @font-face {
-    font-family: "Frozito";
-    src: url("@/assets/fonts/Frozito.ttf") format("truetype");
-  }
+.landing-page {
+  background: url("../assets/SnowFallBg.png") no-repeat center center/cover scroll;
+  max-width: 99vw;
+  min-height: 100vh;
+}
 
-  .landing-page {
-    background: url("../assets/SnowFall.png") no-repeat center center/cover;
-    width: auto;
-    height: 100vh;
-  }
+.pine-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 112%;
+  object-fit: cover;
+  z-index: 1;
+}
 
-  .pine-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 112%;
-    object-fit: cover;
-    z-index: 1;
-  }
+.logo-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
 
-  .logo-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  .text-headings {
+.text-headings {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,17 +72,13 @@
 
 .heading-primary {
   font-family: "Copperplate Gothic", sans-serif;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: bold;
-  margin-bottom: -30px;
-
 }
-
-
 
 .heading-secondary {
   font-family: "Frozito", sans-serif;
-  font-size: 10rem;
+  font-size: 10vw;
   font-weight: bold;
   background-image: url("@/assets/texture.jpg");
   background-size: cover;
@@ -92,5 +87,86 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+/* Responsive Design */
+@media (max-width: 1230px) {
+  .pine-bg {
+    height: 100%;
+  }
+  .landing-page {
+    min-height:85vh;
+  }
+  .logo-bg {
+    height: 60%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pine-bg {
+    height: 90%;
+  }
+  .logo-bg {
+    height: 40%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .pine-bg {
+    height: 90%;
+
+  }
+  .logo-bg {
+    height: 40%;
+    top:40%;
+  }
+  .text-headings{
+    top: 40%;
+  }
+}
+
+@media (max-width: 970px) {
+  .pine-bg {
+    max-height: 60%;
+  }
+  .logo-bg {
+    max-height: 30%;
+    top:40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-headings{
+    top: 35%;
+  }
+  .landing-page {
+    min-height:70vh;
+  }
+  .pine-bg{
+    top: 40%;
+  }
+  .logo-bg{
+    top: 35%;
+  }
+}
+
+@media (max-width: 425px) {
+  .pine-bg{
+    height: 40%;
+    top: 25%;
+  }
+  .logo-bg{
+    height: 25%;
+    top: 20%;
+  }
+  .text-headings{
+    top: 20%;
+  }
+  .landing-page {
+    min-height:45vh;
+  }
+}
+
+
 
 </style>

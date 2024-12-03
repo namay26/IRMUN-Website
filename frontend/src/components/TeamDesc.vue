@@ -5,7 +5,7 @@
           <span class="meet">MEET</span> <span class="the">THE</span> <span class="team2">TEAM</span>
         </h1>
       </div>
-  
+
       <div class="section">
         <div class="leaders-grid">
           <div class="team-card">
@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="section-sub">
         <div class="leaders-grid">
           <div class="team-card">
@@ -36,8 +36,8 @@
           </div>
         </div>
       </div>
-  
-      
+
+
       <div class="section1">
         <h2>HEADS</h2>
         <div class="team-grid">
@@ -50,8 +50,8 @@
           </div>
         </div>
       </div>
-  
-      
+
+
       <div class="section2">
         <h2>MANAGERS</h2>
         <div class="team-grid">
@@ -64,8 +64,8 @@
           </div>
         </div>
       </div>
-  
-    
+
+
       <div class="section3">
         <h2>EXECUTIVES</h2>
         <ul class="executives-list">
@@ -74,9 +74,9 @@
       </div>
     </div>
   </template>
-  
-  
-  
+
+
+
   <script>
     import kartikeyImage from "@/assets/team/kartikey.png";
     import manmathImage from "@/assets/team/manmath.png";
@@ -126,13 +126,13 @@
           "Prisha Sinha",
           "Vatsal Tyagi",
           "Aarush Agrawal",
-          
+
         ],
       };
     },
   };
   </script>
-  
+
   <style scoped>
   @font-face {
   font-family: "Assassin$";
@@ -165,8 +165,8 @@
 
 .section .textbox {
   height:300px;
-  width: 130%; 
-  left: -15%; 
+  width: 130%;
+  left: -15%;
   font-size: 0.1rem;
   padding:0.6rem;
   top: -40px;
@@ -182,7 +182,7 @@
 .section-sub .team-grid {
   display: grid;
   margin-left: 4rem;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
 
@@ -199,9 +199,9 @@
 
 .section-sub .textbox {
   height:300px;
-  width: 130%; 
+  width: 130%;
   left: -15%;
-  font-size: 0.1rem;
+  font-size: 0.1vw;
   padding:0.6rem;
   top: -40px;
   row-gap: 2rem;;
@@ -222,8 +222,8 @@
 }
 
 .section1 h2 {
-  font-size: 4.5rem; 
-  margin-bottom: 1rem; 
+  font-size: 4.5vw;
+  margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
   font-family: "Assassin$", sans-serif;
@@ -238,7 +238,7 @@
 .section1 .team-grid {
   display: grid;
   margin-left: 4rem;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
 
@@ -259,17 +259,17 @@
 
 .section1 .textbox {
   height:300px;
-  width: 130%; 
-  left: -15%; 
-  font-size: 0.1rem;
+  width: 130%;
+  left: -15%;
+  font-size: 0.1vw;
   padding:0.6rem;
   top: -40px;
   row-gap: 2rem;;
 }
 
 .section2 h2 {
-  font-size: 4.5rem; 
-  margin-bottom: 1rem; 
+  font-size: 4.5vw;
+  margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
   font-family: "Assassin$", sans-serif;
@@ -284,10 +284,10 @@
 .section2 .team-grid {
   display: grid;
   margin-left: 4rem;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
-  row-gap: 8rem; 
-  justify-content: center; 
+  row-gap: 8rem;
+  justify-content: center;
 }
 
 
@@ -304,17 +304,17 @@
 
 .section2 .textbox {
   height:200px;
-  width: 175%; 
-  left: -37%; 
-  font-size: 0.1rem;
+  width: 175%;
+  left: -37%;
+  font-size: 0.1vw;
   padding:0.6rem;
   top: -40px;
 }
 
 
 .section3 h2 {
-  font-size: 4.5rem; 
-  margin-bottom: 1rem; 
+  font-size: 4.5vw;
+  margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
   font-family: "Assassin$", sans-serif;
@@ -323,7 +323,7 @@
 
 .section3 .executives-list {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     font-family: "Copperplate Gothic", sans-serif;
 }
 
@@ -332,14 +332,14 @@
   margin-top: 18rem;
   display: flex;
   justify-content: center;
-  gap: 6rem; 
+  gap: 6rem;
   flex-wrap: wrap;
 }
 
 
 .h2{
     font-family: "Assassin$", sans-serif;
-    font-size: 19em;
+    font-size: 19vw;
 }
 
 .text-headings {
@@ -355,7 +355,7 @@
 
 .heading-primary {
   font-family: "Frozito", sans-serif;
-  font-size: 4.5rem;
+  font-size: 4.5vw;
   background-image: url("@/assets/texture.jpg");
   background-size: cover;
   background-position: center;
@@ -366,8 +366,8 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr)); 
-  gap: 2rem; 
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 2rem;
   justify-content: center;
   align-items: start;
 }
@@ -376,14 +376,14 @@
   text-align: center;
   background: white;
   background-image: url("@/assets/snow square.png");
-  padding: 1rem; 
+  padding: 1rem;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  height: 500px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 
@@ -392,27 +392,27 @@
 }
 
 .team-card img {
-  width: 300px; 
+  width: 300px;
   height: 500px;
   object-fit:fill;
   border-radius: 8px;
 }
 
 .section1, .section2, .section3 {
-  margin-bottom: 5rem; 
+  margin-bottom: 5rem;
 }
 
-.textbox { 
-  margin-top: -2rem; 
-  padding: 1rem; 
-  background: #1E262F; 
-  border-radius: 8px; 
-  z-index: 3; 
+.textbox {
+  margin-top: -2rem;
+  padding: 1rem;
+  background: #1E262F;
+  border-radius: 8px;
+  z-index: 3;
   position: relative;
-  width: 130%; 
-  max-width: none; 
-  border: 4px solid #ccc; 
-  box-sizing: border-box; 
+  width: 130%;
+  max-width: none;
+  border: 4px solid #ccc;
+  box-sizing: border-box;
   left: -15%;
   overflow: visible;
   border-radius: 20px;
@@ -421,19 +421,19 @@
 
 
 .team-info h3 {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   margin-bottom: 0.3rem;
 }
 
 .team-info p {
-  font-size: 1rem;
+  font-size: 1vw;
   color: #ccc;
 }
 
 .executives-list {
   list-style: none;
   padding: 0;
-  columns: 2; 
+  columns: 2;
 }
 
 .executives-list li {
@@ -450,14 +450,14 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 2rem; 
-  justify-content: center; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
   .team-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 }

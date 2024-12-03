@@ -35,14 +35,19 @@ components: {
 }
 
 .ebportal {
-  background-color: #0f141e;
+  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .landing-page {
-  background: url("../assets/Snow Fall Background.png") no-repeat center center/cover;
-  width: auto;
-  height: 100vh;
-  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ebbg {
@@ -78,8 +83,9 @@ components: {
 .logo-bg {
   width: 35%;
   position: absolute;
-  left: 33%;
-  bottom: 30%;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top:40%;
   z-index: 1;
 }
 
@@ -96,7 +102,7 @@ components: {
 
 .heading-primary {
   font-family: "Frozito", sans-serif;
-  font-size: 4rem;
+  font-size: 4.5vw;
   background-image: url("@/assets/texture.jpg");
   background-size: cover;
   background-position: center;
@@ -107,7 +113,44 @@ components: {
 
 .heading-sec {
   font-family: "Copperplate", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5vw;
   color: aliceblue;
 }
+
+@media (max-width: 768px) {
+  .ebbg{
+    top: 40%;
+    width: 80vw;
+    height: 80vw;
+  }
+  .glow-bg{
+    top: 40%;
+  }
+  .text-headings{
+    top: 72%;
+  }
+  .logo-bg{
+    top:30%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ebbg{
+    top: 20%;
+    width: 60vw;
+    height: 60vw;
+  }
+  .glow-bg{
+    top: 20%;
+  }
+  .text-headings{
+    top: 35%;
+  }
+  .logo-bg{
+    top: 15%;
+    width: 40%;
+  }
+}
+
 </style>

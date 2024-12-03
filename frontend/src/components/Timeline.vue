@@ -1,7 +1,7 @@
 <template>
   <div class="landing-page-1">
-    <img src="@/assets/Group.png" class="flake" />
-    <img src="@/assets/Flake2.png" class="flake2" />
+    <img src="@/assets/Group.png" class="flake snow" />
+    <img src="@/assets/Flake2.png" class="flake2 snow" />
     <div class="time">
       <div class="container-1">
         <div class="countdown">
@@ -28,7 +28,7 @@
         <h2 class="heading-secondary-date">17 - 19 January</h2>
       </div>
     </div>
-    <img src="@/assets/Flake3.png" class="flake3" />
+    <img src="@/assets/Flake3.png" class="flake3 snow" />
   </div>
 </template>
 
@@ -75,13 +75,11 @@ export default {
 @font-face {
   font-family: "Polar";
   src: url("@/assets/fonts/Polar%20Snow.ttf") format("truetype");
-
 }
 
 @font-face {
   font-family: "Iceberg";
   src: url("@/assets/fonts/Iceberg.ttf") format("truetype");
-
 }
 
 .time {
@@ -101,11 +99,6 @@ export default {
   height: 100vh;
   display: flex;
   position: relative;
-}
-
-.thomso {
-  width: 100%;
-  transform: translate(0%, 60%);
 }
 
 .flake {
@@ -128,7 +121,6 @@ export default {
   z-index: 1;
 }
 
-
 .container-1 {
   position: absolute;
   top: -40%;
@@ -144,18 +136,17 @@ export default {
   margin-top:72%;
   font-family: "Iceberg", sans-serif;
   color: white;
-  font-size: 7rem;
+  font-size: 7vw;
 }
-
 
 .heading-secondary-time {
   font-family: "Polar", sans-serif;
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .heading-primary-time {
   font-family: "Polar", sans-serif;
-  font-size: 12rem;
+  font-size: 11vw;
 }
 
 .countdown {
@@ -164,6 +155,60 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
+
+
+@media (max-width: 1024px) {
+  .snow{
+    height:25%;
+  }
+  .time{
+    height:45%;
+  }
+  .heading-secondary-date{
+    margin-top: 70%;
+  }
+  .flake3{
+    top: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .snow{
+    height:15%;
+  }
+  .time{
+    height:35%;
+  }
+  .heading-secondary-date{
+    margin-top: 70%;
+  }
+  .flake3{
+    top: 52%;
+  }
+  .flake2, .flake{
+    top: -8%;
+  }
+}
+
+@media (max-width: 425px) {
+  .snow{
+    height:10%;
+  }
+  .time{
+    height:20%;
+  }
+  .heading-secondary-date{
+    margin-top: 70%;
+  }
+  .flake3{
+    top: 30%;
+  }
+  .flake2, .flake{
+    top: -5%;
+  }
+}
+
+
+
 </style>

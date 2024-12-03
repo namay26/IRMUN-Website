@@ -33,13 +33,19 @@ components: {
 }
 
 .caportal{
-  background-color: #10567A;
+  background: #10567A url("@/assets/SnowFallBg.png") no-repeat center center scroll;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .landing-page {
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
-  width: auto;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabg {
@@ -67,15 +73,31 @@ components: {
 
 .heading-primary {
   font-family: "CollegiateBlackFLF", sans-serif;
-  font-size: 10em;
+  font-size: 10vw;
 }
 
 .heading-sec {
   font-family: "CollegiateBlackFLF", sans-serif;
-  font-size: 9rem;
+  font-size: 9vw;
 
 }
 
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+  .cabg{
+    height:70%;
+    top: 40%;
+  }
+  .text-headings{
+    top: 30%;
+  }
+}
 
 
 </style>

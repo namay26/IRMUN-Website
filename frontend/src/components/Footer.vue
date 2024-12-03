@@ -72,7 +72,7 @@
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -105,6 +105,13 @@ p {
   background-position: center bottom;
   background-size: cover;
   z-index: -99;
+}
+
+@media (max-width: 425px) {
+  .house{
+    width: 100vw;
+    height: 30vw;
+  }
 }
 
 </style>
