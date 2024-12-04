@@ -4,10 +4,21 @@
     <div class="container-2">
       <div class="header">COMMITTEES</div>
       <img class="bgcom" src="@/assets/backgroundcom.png" />
-      <button class="learn-more">LEARN MORE</button>
+      <button class="learn-more" @click="navigateToCommittee">LEARN MORE</button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "LandingPage",
+  methods: {
+    navigateToCommittee() {
+      this.$router.push('/committees');
+    }
+  }
+};
+</script>
 
 
 <style scoped>
