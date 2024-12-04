@@ -17,6 +17,7 @@
           </div>
         </div>
       </div>
+      <br /> <br />
 
       <div class="section-sub">
         <div class="leaders-grid">
@@ -37,7 +38,7 @@
         </div>
       </div>
 
-
+      <br /><br />
       <div class="section1">
         <h2>HEADS</h2>
         <div class="team-grid">
@@ -54,6 +55,7 @@
 
       <div class="section2">
         <h2>MANAGERS</h2>
+        <br /> <br />
         <div class="team-grid">
           <div v-for="manager in managers" :key="manager.name" class="team-card">
             <img :src="manager.image" :alt="manager.name" />
@@ -142,7 +144,13 @@
 .team-section {
   padding: 2rem;
   color: white;
-  background-image: url("../assets/SnowFall.png");
+}
+
+.section h2,
+.section1 h2,
+.section2 h2,
+.section3 h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .section .team-card{
@@ -158,9 +166,10 @@
   gap:1em;
   position: relative;
   overflow: visible;
-  object-fit: fill;
+  object-fit: cover;
   transform: translateX(-8%);
   top:-60px;
+
 }
 
 .section .textbox {
@@ -192,7 +201,7 @@
   gap:1em;
   position: relative;
   overflow: visible;
-  object-fit: fill;
+  object-fit: cover;
   transform: translateX(-4%);
   top:-50px;
 }
@@ -248,7 +257,7 @@
   gap:1em;
   position: relative;
   overflow: visible;
-  object-fit: fill;
+  object-fit: cover;
   transform: translateX(-8%);
   top:-50px;
 }
@@ -283,7 +292,7 @@
 
 .section2 .team-grid {
   display: grid;
-  margin-left: 4rem;
+  margin-left: 8rem;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
   row-gap: 8rem;
@@ -297,7 +306,7 @@
   gap:1em;
   position: relative;
   overflow: visible;
-  object-fit: fill;
+  object-fit: cover;
   transform: translateX(-8%);
   top:-50px;
 }
@@ -323,7 +332,7 @@
 
 .section3 .executives-list {
     text-align: center;
-    font-size: 1.3vw;
+    font-size: 1.3  vw;
     font-family: "Copperplate Gothic", sans-serif;
 }
 
@@ -344,7 +353,7 @@
 
 .text-headings {
   position: absolute;
-  top: 30%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -355,7 +364,7 @@
 
 .heading-primary {
   font-family: "Frozito", sans-serif;
-  font-size: 4.5vw;
+  font-size: clamp(2rem, 5vw, 4rem);
   background-image: url("@/assets/texture.jpg");
   background-size: cover;
   background-position: center;
@@ -421,17 +430,19 @@
 
 
 .team-info h3 {
-  font-size: 1.2vw;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+
   margin-bottom: 0.3rem;
 }
 
 .team-info p {
-  font-size: 1vw;
+  font-size: clamp(0.8rem, 1vw, 1rem);
   color: #ccc;
 }
 
 .executives-list {
   list-style: none;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   padding: 0;
   columns: 2;
 }
@@ -450,21 +461,29 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .leaders-grid {
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
 @media screen and (max-width: 480px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .executives-list {
+    columns: 1;
   }
 }
 

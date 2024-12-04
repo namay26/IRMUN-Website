@@ -20,11 +20,12 @@
         </div>
         <div class="contact-details">
           <h3>Contact Us</h3>
-          <p class="email">irmun@iitr.ac.in<br />
-            sahil.irmun@gmail.com
+          <p class="email"> Mail Id : irmun@iitr.ac.in<br />
           </p>
-          <p class="contact">Janhavi : +91 00000 00000<br />
-            Divyansh : +91 00000 00000
+          <p class="contact">
+            Divyansh : +91 89496 08718<br />
+            Manmath : +91 77560 17385
+
           </p>
         </div>
       </div>

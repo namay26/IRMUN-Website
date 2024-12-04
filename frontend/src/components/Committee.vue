@@ -12,7 +12,6 @@
 
 <style scoped>
 .landing-page-2 {
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;

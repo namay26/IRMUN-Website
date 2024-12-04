@@ -1,4 +1,5 @@
 <template>
+  <div class="main">
     <div class="landing-page">
       <img src="@/assets/Pine.png" alt="Pine Background" class="pine-bg" />
       <img src="@/assets/Group 7.png" alt="Logo Background" class="logo-bg" />
@@ -12,6 +13,7 @@
     <Timeline />
     <Committee />
     <Footer />
+  </div>
   </template>
 
   <script>
@@ -34,8 +36,15 @@
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
 }
 
+.main{
+  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .landing-page {
-  background: url("../assets/SnowFallBg.png") no-repeat center center/cover scroll;
   max-width: 99vw;
   min-height: 100vh;
 }

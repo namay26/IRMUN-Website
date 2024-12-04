@@ -24,15 +24,12 @@ components: {
 
 <style scoped>
 
-.team {
-  background-color: #0f141e;
-}
-
 .landing-page {
-  width: auto;
-  height: 100vh;
-  position: relative;
-  z-index: 0;
+  background: black url("@/assets/SnowFallBg.png") no-repeat center center scroll;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 

@@ -14,7 +14,9 @@
       <router-link to="/eb-portal">EB Portal</router-link>
       <router-link to="/committees">Committees</router-link>
       <router-link to="/team">Team</router-link>
-      <router-link to="/register" style="background-color: aquamarine">Register</router-link>
+      <a href="https://forms.gle/PgQ24LmVogeJb9cZA" style="background-color: #6699ff; border-radius: 0.5vw;" target="_blank" rel="noopener noreferrer">
+  Register
+</a>
     </div>
   </nav>
 </template>
