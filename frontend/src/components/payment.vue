@@ -2,15 +2,11 @@
   <div class="welcomePage">
      <div class="landing-page">
       <div class="container">
-      <div class="header">WELCOME!</div>
+      <div class="header">PAYMENT</div>
+      
        <div class="content">
-       
-    <div class="register">
-     <a href="https://forms.gle/PgQ24LmVogeJb9cZA" target="_blank" rel="noopener noreferrer">
-      NEW REGISTRATION
-     </a>
-    </div>
-    <div class="register"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
+       <input type="text" id="munId" name="name" placeholder="MUNarchy ID" />
+       <button type="submit" class="payBtn">Pay</button>
     </div>
     </div>
    
@@ -24,7 +20,7 @@
 
 import Footer from "./Footer.vue";
 export default {
-  name: "WelcomePage",
+  name: "Welcome",
   components: {
     Footer,
   },
@@ -62,14 +58,34 @@ width:60%;
 justify-content:center;
 
 }
+#munId{
+width:80%;
+  text-align: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 4rem; 
+  margin: 1rem auto;
+  padding:0.5rem;
+  font-family: "Copperplate", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  background:#D9D9D9;
+  border:none;
+}
 
-.register{
+input:active{
+border:none;
+outline:none;
+}
+
+.payBtn{
 font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
-  width: 90%;
+  width: 60%;
   background: #1E262F;
-  font-size: 1.4vw;
+  font-size: 1.5rem;
   border-radius: 0.8rem;
   text-align: center; 
   display: flex; 
@@ -78,8 +94,15 @@ font-family: "Copperplate", sans-serif;
   height: 4rem; 
   margin: 1rem auto;
   padding:0.5rem;
+  cursor: pointer; 
+transition: all 0.3s ease;
   
 }
+
+ .payBtn:hover {
+      
+      transform: scale(1.1);
+    }
 
 .landing-page {
   flex: 1; 
@@ -131,8 +154,9 @@ font-family: "Copperplate", sans-serif;
     width: 90%;
     border-radius: 10px;
   }
-  .register{
-  font-size:2vw;
+  .payBtn{
+  font-size:1.2rem;
+   height: 3rem;
   }
 
   
@@ -149,11 +173,15 @@ font-family: "Copperplate", sans-serif;
   .header{
    height: 6vh;
   }
-  .register{
-  font-size:2vw;
-  height:3rem;
+  .payBtn{
+  font-size:1rem;
+  height:2rem;
   margin:0.5rem auto;
 
+  }
+
+  #munId{
+  font-size: 0.8rem;
   }
 }
 

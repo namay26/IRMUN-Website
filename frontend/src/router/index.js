@@ -6,6 +6,7 @@ import ComPortal from "@/components/ComPortal.vue";
 import Team from "@/components/TeamPage.vue";
 import Registration from "@/components/Registration.vue";
 import WelcomePage from "@/components/WelcomePage.vue";
+import Payment from "@/components/payment.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -14,7 +15,9 @@ const routes = [
   { path: "/committees", name: "Committees", component: ComPortal },
   { path: "/team", name: "TeamPage", component: Team },
   { path: "/register", name: "Registration", component: Registration },
-  { path: "/welcome", name: "WelcomePage", component: WelcomePage }
+  { path: "/welcome", name: "WelcomePage", component: WelcomePage },
+  { path: "/payment", name: "Payment", component: Payment },
+
 ];
 
 const router = createRouter({
