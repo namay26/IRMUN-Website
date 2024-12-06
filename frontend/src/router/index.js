@@ -5,6 +5,7 @@ import EBPortal from "@/components/EBPortal.vue";
 import ComPortal from "@/components/ComPortal.vue";
 import Team from "@/components/TeamPage.vue";
 import Registration from "@/components/Registration.vue";
+import WelcomePage from "@/components/WelcomePage.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -13,6 +14,7 @@ const routes = [
   { path: "/committees", name: "Committees", component: ComPortal },
   { path: "/team", name: "TeamPage", component: Team },
   { path: "/register", name: "Registration", component: Registration },
+  { path: "/welcome", name: "WelcomePage", component: WelcomePage }
 ];
 
 const router = createRouter({
