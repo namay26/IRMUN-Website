@@ -6,9 +6,7 @@
        <div class="content">
        
     <div class="register">
-     <a href="https://forms.gle/PgQ24LmVogeJb9cZA" target="_blank" rel="noopener noreferrer">
-      NEW REGISTRATION
-     </a>
+     <router-link to="/form">NEW REGISTRATION</router-link>
     </div>
     <div class="register"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
     </div>

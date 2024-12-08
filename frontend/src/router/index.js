@@ -7,6 +7,7 @@ import Team from "@/components/TeamPage.vue";
 import Registration from "@/components/Registration.vue";
 import WelcomePage from "@/components/WelcomePage.vue";
 import Payment from "@/components/payment.vue";
+import Form from "@/components/Form.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -17,6 +18,7 @@ const routes = [
   { path: "/register", name: "Registration", component: Registration },
   { path: "/welcome", name: "WelcomePage", component: WelcomePage },
   { path: "/payment", name: "Payment", component: Payment },
+  { path: "/form", name: "Form", component: Form },
 
 ];
 

@@ -5,7 +5,11 @@
       <div class="header">PAYMENT</div>
       
        <div class="content">
+       <form>
        <input type="text" id="munId" name="name" placeholder="MUNarchy ID" />
+       </form>
+       <h3 class="notFound">ID does not exist</h3>
+       <h3 class="completed">Payment has already been completed</h3>
        <button type="submit" class="payBtn">Pay</button>
     </div>
     </div>
@@ -37,6 +41,18 @@ export default {
 a {
   all: unset; 
   cursor: pointer; 
+}
+
+.notFound{
+color:red;
+text-align:center;
+display:none;
+}
+
+.completed{
+color:green;
+text-align:center;
+display:none;
 }
 
 .welcomePage {
@@ -80,6 +96,7 @@ outline:none;
 }
 
 .payBtn{
+display:none;
 font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
@@ -88,7 +105,7 @@ font-family: "Copperplate", sans-serif;
   font-size: 1.5rem;
   border-radius: 0.8rem;
   text-align: center; 
-  display: flex; 
+  
   justify-content: center; 
   align-items: center; 
   height: 4rem; 

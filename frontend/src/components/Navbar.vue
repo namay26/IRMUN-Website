@@ -42,13 +42,13 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0);
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
 .navbar-bg {
@@ -56,24 +56,26 @@ export default {
   top: -5rem;
   left: 0;
   width: 100%;
+ 
   z-index: -1;
 }
 
 .logo {
+padding-top:5px;
   position: relative;
   z-index: 2;
-  height: 60px;
+  height: 2.5rem;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   z-index: 2;
   margin-right: 20px;
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Copperplate Gothic', sans-serif;
   font-weight: bold;
   color: black;
@@ -126,13 +128,14 @@ export default {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px;
-    right: 0;
-    width: 100%;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
     background-color: rgba(255, 255, 255, 0.9);
     gap: 1rem;
     padding: 1rem;
     z-index: 2;
+    margin:0;
   }
 
   .nav-links.active {
@@ -142,6 +145,7 @@ export default {
   .hamburger {
     display: flex;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -150,13 +154,16 @@ export default {
     padding: 0.3rem 0.8rem;
   }
 
-  .logo {
-    height: 50px;
+  .navbar{
+    height: 4vw;
+    padding-top:1rem;
   }
 
-  .navbar {
-    height: 80px;
+  .logo{
+  height:1.5rem;
   }
+
+  
 }
 
 @media (max-width: 1680px) {
@@ -182,7 +189,8 @@ export default {
     top: 0rem;
   }
   .navbar{
-    height: 80px;
+    height: 5vw;
+    padding-top:1.2rem;
   }
 }
 
@@ -190,12 +198,7 @@ export default {
   .navbar-bg {
     top: 0rem;
   }
-  .navbar{
-    height: 40px;
-  }
-  .logo{
-    height: 30px;
-  }
+  
 }
 
 </style>
