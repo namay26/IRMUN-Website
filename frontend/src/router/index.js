@@ -8,7 +8,8 @@ import Registration from "@/components/Registration.vue";
 import WelcomePage from "@/components/WelcomePage.vue";
 import Payment from "@/components/payment.vue";
 import Form from "@/components/Form.vue";
-
+import Successful from "@/components/successful.vue";
+import Unsuccessful from "@/components/Unsuccessful.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -20,7 +21,8 @@ const routes = [
   { path: "/welcome", name: "WelcomePage", component: WelcomePage },
   { path: "/payment", name: "Payment", component: Payment },
   { path: "/form", name: "Form", component: Form },
- 
+  { path: "/successful", name: "Successful", component: Successful },
+  { path: "/unsuccessful", name: "Unsuccessful", component: Unsuccessful },
 
 ];
 

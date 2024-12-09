@@ -12,7 +12,10 @@
     </div>
     <Timeline />
     <Committee />
+    <Details />
+     <AboutUs />
     <Footer />
+   
   </div>
   </template>
 
@@ -20,12 +23,16 @@
     import Timeline from "@/components/Timeline.vue";
     import Committee from "@/components/Committee.vue";
     import Footer from "@/components/Footer.vue";
+    import Details from "@/components/Details.vue";
+    import AboutUs from "@/components/AboutUs.vue";
     export default {
     name: "Home",
     components: {
       Timeline,
       Committee,
       Footer,
+      Details,
+      AboutUs
     },
   };
   </script>
