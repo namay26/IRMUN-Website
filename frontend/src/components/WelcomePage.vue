@@ -4,15 +4,15 @@
       <div class="container">
       <div class="header">WELCOME!</div>
        <div class="content">
-       
+
     <div class="register">
-     <router-link to="/form">NEW REGISTRATION</router-link>
+     <router-link to="/register">NEW REGISTRATION</router-link>
     </div>
     <div class="register"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
     </div>
     </div>
-   
-    
+
+
     </div>
     <Footer />
   </div>
@@ -37,8 +37,8 @@ export default {
 }
 
 a {
-  all: unset; 
-  cursor: pointer; 
+  all: unset;
+  cursor: pointer;
 }
 
 .welcomePage {
@@ -69,18 +69,18 @@ font-family: "Copperplate", sans-serif;
   background: #1E262F;
   font-size: 1.4vw;
   border-radius: 0.8rem;
-  text-align: center; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 4rem; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
   margin: 1rem auto;
   padding:0.5rem;
-  
+
 }
 
 .landing-page {
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,21 +89,21 @@ font-family: "Copperplate", sans-serif;
 
 .container {
   position: relative;
-  top: 12vw; 
-  width: 60%; 
-  max-width: 800px; 
-  height: 60%; 
-  aspect-ratio: 3 / 2; 
-  margin: 2rem auto; 
-  background: #fff url("@/assets/combg.png") no-repeat center center; 
-  background-size: cover; 
-  border-radius: 1.6vw; 
+  top: 12vw;
+  width: 60%;
+  max-width: 800px;
+  height: 60%;
+  aspect-ratio: 3 / 2;
+  margin: 2rem auto;
+  background: #fff url("@/assets/combg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 1.6vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .header {
@@ -133,15 +133,15 @@ font-family: "Copperplate", sans-serif;
   font-size:2vw;
   }
 
-  
+
 }
 
 @media screen and (max-width: 480px) {
   .container {
     top:8vh;
-    width: 90%; 
-    margin: 3rem auto; 
-    padding: 0.5rem; 
+    width: 90%;
+    margin: 3rem auto;
+    padding: 0.5rem;
   }
 
   .header{
