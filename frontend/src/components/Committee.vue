@@ -38,7 +38,7 @@ export default {
 .container-2 {
   margin-top: 40rem;
   position: relative;
-  width: 50%;
+  width: 70%;
   height: 70%;
   background: white;
   border-radius: 1.6rem;
