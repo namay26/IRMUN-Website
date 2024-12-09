@@ -35,9 +35,9 @@
 
 <style scoped>
 .landing-page-4 {
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
+  /* background: url("../assets/SnowFall.png") no-repeat center center/cover; */
   background-size:200%;
-  z-index: 999;
+  /* z-index: 2; */
   font-family: "Copperplate", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: bold;
   color: #CFF8FE;
