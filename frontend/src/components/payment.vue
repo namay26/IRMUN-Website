@@ -7,6 +7,7 @@
        <div class="content">
        <form>
        <input type="text" id="munId" name="name" placeholder="MUNarchy ID" />
+       <button type="submit" class="payBtn2">Check</button>
        </form>
        <h3 class="notFound">ID does not exist</h3>
        <h3 class="completed">Payment has already been completed</h3>
@@ -54,6 +55,11 @@ color:green;
 text-align:center;
 display:none;
 }
+form{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
 
 .welcomePage {
 display: flex;
@@ -95,8 +101,8 @@ border:none;
 outline:none;
 }
 
-.payBtn{
-display:none;
+.payBtn , .payBtn2{
+
 font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
@@ -116,7 +122,10 @@ transition: all 0.3s ease;
   
 }
 
- .payBtn:hover {
+
+.payBtn{
+display:none;}
+ .payBtn:hover ,.payBtn:hover{
       
       transform: scale(1.1);
     }
@@ -171,7 +180,7 @@ transition: all 0.3s ease;
     width: 90%;
     border-radius: 10px;
   }
-  .payBtn{
+  .payBtn ,.payBtn2{
   font-size:1.2rem;
    height: 3rem;
   }
@@ -190,7 +199,7 @@ transition: all 0.3s ease;
   .header{
    height: 6vh;
   }
-  .payBtn{
+  .payBtn ,.payBtn2{
   font-size:1rem;
   height:2rem;
   margin:0.5rem auto;

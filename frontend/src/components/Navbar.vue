@@ -15,6 +15,8 @@
       <router-link to="/committees">Committees</router-link>
       <router-link to="/team">Team</router-link>
       <router-link to="/welcome">Register</router-link>
+      <a href="https://drive.google.com/file/d/1axKc71YQ8RmfMHlbdyPVpH1mAPlW2_HO/view" target="_blank">Brochure</a>
+      
      
     </div>
   </nav>
@@ -41,7 +43,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 6vw;
   display: flex;
   align-items: center;

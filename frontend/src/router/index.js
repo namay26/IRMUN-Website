@@ -9,6 +9,7 @@ import WelcomePage from "@/components/WelcomePage.vue";
 import Payment from "@/components/payment.vue";
 import Form from "@/components/Form.vue";
 
+
 const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/ca-portal", name: "CAPortal", component: CAPortal },
@@ -19,6 +20,7 @@ const routes = [
   { path: "/welcome", name: "WelcomePage", component: WelcomePage },
   { path: "/payment", name: "Payment", component: Payment },
   { path: "/form", name: "Form", component: Form },
+ 
 
 ];
 
