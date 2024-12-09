@@ -16,8 +16,7 @@
       <router-link to="/team">Team</router-link>
       <router-link to="/welcome">Register</router-link>
       <a href="https://drive.google.com/file/d/1axKc71YQ8RmfMHlbdyPVpH1mAPlW2_HO/view" target="_blank">Brochure</a>
-      
-     
+
     </div>
   </nav>
 </template>
@@ -58,7 +57,7 @@ export default {
   top: -5rem;
   left: 0;
   width: 100%;
- 
+
   z-index: -1;
 }
 
@@ -147,7 +146,7 @@ padding-top:5px;
   .hamburger {
     display: flex;
   }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -165,7 +164,7 @@ padding-top:5px;
   height:1.5rem;
   }
 
-  
+
 }
 
 @media (max-width: 1680px) {
@@ -200,7 +199,7 @@ padding-top:5px;
   .navbar-bg {
     top: 0rem;
   }
-  
+
 }
 
 </style>
