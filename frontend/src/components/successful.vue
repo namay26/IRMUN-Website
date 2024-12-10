@@ -1,7 +1,7 @@
 <template>
 <div class="welcomePage">
 <div class="container">
-<h1>Payment has been completed successfully!!!</h1>
+<h1 class="payment_acknowledge">Payment has been completed successfully!!!</h1>
 </div>
 <Footer/>
 </div>
@@ -28,21 +28,24 @@ display: flex;
 }
 .container {
   position: relative;
-  top: 12vw; 
-  width: 60%; 
-  max-width: 800px; 
-  height: 60%; 
-  aspect-ratio: 3 / 2; 
-  margin: 2rem auto; 
-  background: #fff url("@/assets/combg.png") no-repeat center center; 
-  background-size: cover; 
-  border-radius: 1.6vw; 
+  top: 12vw;
+  width: 60%;
+  max-width: 800px;
+  height: 60%;
+  aspect-ratio: 3 / 2;
+  margin: 2rem auto;
+  background: #fff url("@/assets/combg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 1.6vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem; 
+  padding: 1rem;
+}
+.payment_acknowledge{
+  color:black
 }
 </style>
 
