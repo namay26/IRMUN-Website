@@ -433,7 +433,7 @@ import {
 } from "@/models/registrationModel";
 import Footer from "./Footer.vue";
 import { PortfolioPreferencesCountries } from "@/constants/portfolioPreferenceCountries";
-import { AxiosRegistrationServices } from "@/services/registration_services/registration_api_services";
+import { AxiosServices } from "@/services/api_services/api_services";
 import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferenceAippm";
 
 export default {
@@ -460,7 +460,7 @@ export default {
 
           console.log('Submitting user data:', this.user);
           // const response = await axios.post('http://127.0.0.1:5000/api/register', this.user);
-          const response = await AxiosRegistrationServices("/api/register", this.user)
+          const response = await AxiosServices("/api/register", this.user)
           console.log(response);
           alert(response["message"])
         }

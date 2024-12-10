@@ -7,7 +7,7 @@ const AxiosClient = axios.create({
   }
 })
 
-export const AxiosRegistrationServices = async (endpoint, payload)=>{
+export const AxiosServices = async (endpoint, payload)=>{
   try{
     const response = await AxiosClient.post(endpoint, payload)
     return response.data
