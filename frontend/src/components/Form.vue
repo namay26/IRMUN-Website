@@ -389,7 +389,6 @@
               </select>
             </div>
 
-            <label class="heading" for="accomodation">Accommodation</label>
 
             <button type="submit" class="payBtn">Register</button>
           </form>
