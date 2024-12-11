@@ -76,10 +76,10 @@ export default {
 
         switch (pay_status){
           case true:
-            this.visibilityStatus[1] = true
+            this.visibilityStatus = [false,true,false]
             break;
           case false:
-            this.visibilityStatus[2] = true
+            this.visibilityStatus = [false, false, true]
             break;
           default:
             return
@@ -87,7 +87,7 @@ export default {
 
       }catch(e){
         console.log(`Error Occured while processing your request. ${e}`)
-        this.visibilityStatus[0] = true
+        this.visibilityStatus = [true,false,false]
       }
     },
     async initatePayment(){
@@ -98,6 +98,7 @@ export default {
       try{
         const response = await AxiosServices('/api/payments', paymentRecd)
         console.log(response)
+        window.location.href = response
       }catch(e){
         alert(`Error Occured while processing your request. Please try again later ! \n${e}`)
       }
