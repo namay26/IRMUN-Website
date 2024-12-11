@@ -51,10 +51,13 @@ display: flex;
 
 <script>
   import Footer from "./Footer.vue";
+  import router from "@/router";
 export default {
   name: "Unsuccessful",
   components: {
     Footer,
-  },
+  },mounted(){
+    setTimeout(()=>router.push('/'),2000)
+  }
 };
 </script>

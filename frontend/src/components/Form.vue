@@ -390,29 +390,6 @@
             </div>
 
             <label class="heading" for="accomodation">Accommodation</label>
-            <div class="qualColor">
-              <div>
-                MUNarchy has provision for participants' residences in the guest houses/ hostel rooms of IIT Roorkee
-                inside the campus itself. IITR has multiple comfortable guest houses/guest rooms. The team will make all
-                the arrangements. We recommend availing yourself of the accommodation facility to avoid the hassle of
-                travelling and living outside the campus.
-                The accommodation is limited; the team will allot hostels on a first-come, first-serve basis. Any later
-                request a few days before the event to provide accommodation can't be guaranteed and is subject to
-                availability.
-                <br>
-              </div>
-
-              <div>
-                <input type="radio" id="yesAccom" class="radioStyles" name="accommodation"
-                  :value="AccommodationChoices.YES" v-model="user.accommodation" required>
-                <label for="yesAccom">Yes, avail in-house accommodation</label>
-              </div>
-              <div>
-                <input type="radio" id="noAccom" class="radioStyles" name="accommodation"
-                  :value="AccommodationChoices.NO" v-model="user.accommodation">
-                <label for="noAccom">No, only participation without accommodation</label>
-              </div>
-            </div>
 
             <button type="submit" class="payBtn">Register</button>
           </form>
@@ -435,6 +412,7 @@ import Footer from "./Footer.vue";
 import { PortfolioPreferencesCountries } from "@/constants/portfolioPreferenceCountries";
 import { AxiosServices } from "@/services/api_services/api_services";
 import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferenceAippm";
+import router from "@/router/index"
 
 export default {
   name: "RegistrationForm",
@@ -450,7 +428,8 @@ export default {
       PortfolioPreferencesCountries,
       PortfolioPreferencesAippm,
       CommitteeChoices,
-      user: RegistrationModel
+      user: RegistrationModel,
+      router
     }
   },
   methods: {
@@ -459,10 +438,10 @@ export default {
         if (this.validateForm()) {
 
           console.log('Submitting user data:', this.user);
-          // const response = await axios.post('http://127.0.0.1:5000/api/register', this.user);
           const response = await AxiosServices("/api/register", this.user)
           console.log(response);
           alert(response["message"])
+          this.router.push('/')
         }
       } catch (error) {
         console.error('Registration failed:', error);
@@ -473,7 +452,7 @@ export default {
       const requiredFields = [
         'name', 'institution', 'number', 'email_id',
         'sex', 'qualification', 'committee_pref',
-        'portfolio_pref', 'accommodation'
+        'portfolio_pref'
       ];
 
       for (let field of requiredFields) {
