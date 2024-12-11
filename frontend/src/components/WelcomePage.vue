@@ -8,7 +8,7 @@
     <div class="register">
      <router-link to="/register">NEW REGISTRATION</router-link>
     </div>
-    <div class="register"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
+    <div class="payment"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
     </div>
     </div>
 
@@ -58,7 +58,22 @@ display:flex;
 flex-direction:column;
 width:60%;
 justify-content:center;
+}
 
+.payment{
+  font-family: "Copperplate", sans-serif;
+  letter-spacing: 0.2rem;
+  color: white;
+  width: 90%;
+  background: #1E262F;
+  font-size: 1.4vw;
+  border-radius: 0.8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding:0.5rem;
 }
 
 .register{
@@ -118,7 +133,7 @@ font-family: "Copperplate", sans-serif;
   justify-content: center;
   align-items: center;
   background: #1E262F;
-  font-size: 3vw;
+  font-size: 2vw;
   border-radius: 1rem;
   border: 0.2rem solid white;
   margin-bottom:1rem;
