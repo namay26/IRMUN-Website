@@ -1,6 +1,6 @@
 <template>
   <div class="landing-page-2">
-  
+
     <div class="container-2">
       <div class="header">ABOUT US</div>
       <div class="wrapper">
@@ -13,8 +13,8 @@ In addition to external participation, IRMUN organizes its annual flagship confe
 
 
       </div>
-     
-     
+
+
     </div>
     </div>
   </div>
@@ -48,12 +48,13 @@ display: flex;
   padding:2rem;
 }
 .content{
+  color: black;
+  text-align: center;
  font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
- margin:3rem auto;
- margin-top:4rem;
- text-align:justify;
- font-size:1rem;
+ margin:4rem;
+ margin-top:6rem;
+ font-size:1.5rem;
 }
 
 .bgcom {
@@ -73,7 +74,7 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .header {
@@ -92,7 +93,7 @@ display: flex;
   border-radius: 1.5vw;
   border: 0.3vw solid white;
   text-align:center;
-  
+
 }
 
 .flake4 {
@@ -171,7 +172,7 @@ display: flex;
   }
 
   .content{
- 
+
  font-size:0.7rem;
 }
 }

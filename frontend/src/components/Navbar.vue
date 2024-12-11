@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <img src="@/assets/Nav Bar.png" alt="Navbar Background" class="navbar-bg" />
-    <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="logo" /></router-link>
+    <router-link to="/"><img src="@/assets/munarchy.png" alt="Logo" class="logo" /></router-link>
 
     <div class="hamburger" @click="toggleMenu">
       <div class="bar"></div>
@@ -65,7 +65,7 @@ export default {
 padding-top:5px;
   position: relative;
   z-index: 2;
-  height: 2.5rem;
+  height: 3.5rem;
 }
 
 .nav-links {

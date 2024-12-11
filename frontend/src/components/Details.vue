@@ -1,17 +1,17 @@
 <template>
   <div class="landing-page-2">
-  
+
     <div class="container-2">
       <div class="header">LETTER FROM SECRETARY GENERAL</div>
       <div class="wrapper">
       <div class="content">
-       IRMUN was founded in 2021 by a group of students of IIT Roorkee and since then, it has continuously conducted in-campus MUNs at Thomso, Cognizance, Cultural General Championship, Social Summit and E-Summit. Several teams from IRMUN have attended inter-collegiate events in different colleges in the past and acquired different levels of prizes in many of them too. The exposure to other MUN societies helped us realize the positive impact that these events have on the development of young people. MUN provides a common ground for students of different ethnicities, backgrounds, and cultures to learn from each other, collaborate and come up with solutions to make changes to our country and the world. MUN experiences teach participants how to negotiate, build consensus and resolve conflicts—skills that are not only invaluable in the realm of international relations but also transferable to personal and professional growth. 
+       IRMUN was founded in 2021 by a group of students of IIT Roorkee and since then, it has continuously conducted in-campus MUNs at Thomso, Cognizance, Cultural General Championship, Social Summit and E-Summit. Several teams from IRMUN have attended inter-collegiate events in different colleges in the past and acquired different levels of prizes in many of them too. The exposure to other MUN societies helped us realize the positive impact that these events have on the development of young people. MUN provides a common ground for students of different ethnicities, backgrounds, and cultures to learn from each other, collaborate and come up with solutions to make changes to our country and the world. MUN experiences teach participants how to negotiate, build consensus and resolve conflicts—skills that are not only invaluable in the realm of international relations but also transferable to personal and professional growth.
 
-      We are proud to have a talented Organising Team of IRMUN which made this event a possibility. AURORA will be the first MUN event on campus dedicated towards celebrating diplomacy, leadership and collaboration. This event aims to encourage fruitful debates and global awareness as a new generation of enthusiasts steps into the world of global politics. Together, we aspire to make AURORA a success and a stepping stone for the future events of IRMUN.
+      We are proud to have a talented Organising Team of IRMUN which made this event a possibility. MUNarchy will be the first MUN event on campus dedicated towards celebrating diplomacy, leadership and collaboration. This event aims to encourage fruitful debates and global awareness as a new generation of enthusiasts steps into the world of global politics. Together, we aspire to make MUNarchy a success and a stepping stone for the future events of IRMUN.
 
       </div>
-     
-     
+
+
     </div>
     </div>
   </div>
@@ -45,12 +45,13 @@ display: flex;
   padding:2rem;
 }
 .content{
+  color:black;
+  margin-top:6rem;
+  font-size:1.5rem;
  font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
- margin:3rem auto;
-  margin-top:4rem;
- text-align:justify;
- font-size:1rem;
+ margin:4rem;
+text-align: center;
 }
 
 .bgcom {
@@ -70,7 +71,7 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .header {
@@ -89,7 +90,7 @@ display: flex;
   border-radius: 1.5vw;
   border: 0.3vw solid white;
   text-align:center;
-  
+
 }
 
 .flake4 {
@@ -168,7 +169,7 @@ display: flex;
   }
 
   .content{
- 
+
  font-size:0.7rem;
 }
 }
