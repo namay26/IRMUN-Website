@@ -3,8 +3,6 @@
     <div class="landing-page">
       <img src="@/assets/ebpic.png" class="ebbg" />
       <img src="@/assets/Group 7.png" alt="Logo Background" class="logo-bg" />
-      <img src="@/assets/EB BG 1.png" alt="Glow Background" class="glow-bg" />
-      <img src="@/assets/SnowFall.png" alt="Snow Background" class="snow-bg" />
 
       <div class="text-headings">
         <h1 class="heading-primary">EYECUTIVE BOARD</h1>
@@ -35,7 +33,6 @@ components: {
 }
 
 .ebportal {
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
   min-height: 100vh;

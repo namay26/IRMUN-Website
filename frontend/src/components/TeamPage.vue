@@ -28,8 +28,7 @@ components: {
 .team{
 max-width:100%;
 }
-.landing-page {
-  background: black url("@/assets/SnowFallBg.png") no-repeat center center scroll;
+.landing-page { 
   background-size: cover;
   width: 100vw;
   min-height: 100vh;

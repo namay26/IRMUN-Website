@@ -1,6 +1,5 @@
 <template>
   <div class="landing-page-2">
-    <img src="@/assets/Flake4.png" class="flake4" />
     <div class="container-2">
       <div class="header">COMMITTEES</div>
       <img class="bgcom" src="@/assets/backgroundcom.png" />

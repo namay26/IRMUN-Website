@@ -1,12 +1,13 @@
 <template>
   <div class="main">
     <div class="landing-page">
-      <img src="@/assets/Pine.png" alt="Pine Background" class="pine-bg" />
       <img src="@/assets/Group 7.png" alt="Logo Background" class="logo-bg" />
 
       <div class="text-headings">
-        <h2 class="heading-primary">IRMUN PRESENTS</h2>
+        <h2 class="heading-primary">IIT Roorkee MUN</h2>
+        <h3 class="heading-tert">Presents</h3>
         <h1 class="heading-secondary">MUNarchy</h1>
+        <h2 class="tagline">The Reign Of Diplomacy</h2>
       </div>
 
     </div>
@@ -15,7 +16,7 @@
     <Details />
      <AboutUs />
     <Footer />
-   
+
   </div>
   </template>
 
@@ -43,8 +44,23 @@
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Spirit";
+  src: url("@/assets/fonts/Spirit.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
+
 .main{
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -56,17 +72,17 @@
   min-height: 100vh;
 }
 
-.pine-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 112%;
-  object-fit: cover;
-  z-index: 1;
-}
+.heading-tert{
+  font-family: "Spirit", sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #fff;
 
+}
+.tagline{
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+}
 .logo-bg {
   position: absolute;
   top: 50%;
@@ -87,21 +103,14 @@
 }
 
 .heading-primary {
-  font-family: "Copperplate Gothic", sans-serif;
-  font-size: 3vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
 .heading-secondary {
-  font-family: "Frozito", sans-serif;
-  font-size: 10vw;
-  font-weight: bold;
-  background-image: url("@/assets/texture.jpg");
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  font-family: "Gothic", sans-serif;
+  font-size: 9vw;
 }
 
 /* Responsive Design */

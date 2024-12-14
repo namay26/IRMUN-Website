@@ -30,7 +30,6 @@ export default {
 }
 
 .comportal {
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -53,9 +52,8 @@ export default {
 }
 
 .heading-primary {
-  font-family: "Frozito", sans-serif;
-  font-size: 10vw;
-  font-weight: bold;
+  font-family: "Gothic", sans-serif;
+  font-size: 6vw;
   background-image: url("@/assets/texture.jpg");
   background-size: cover;
   background-position: center;

@@ -1,8 +1,8 @@
 <template>
   <div class="landing-page-2">
     <div class="question">
-      <h2 class="campus">WHAT IS CAMPUS</h2>
-      <h2 class="ambassador">AMBASSADOR PROGRAM?</h2>
+      <h2 class="campus">What is CAMPUS</h2>
+      <h2 class="ambassador">AMBASSADOR program?</h2>
     </div>
     <div class="container-2">
       <div class="caexplain">As a part of the student campus ambassador program, MUNARCHY offers students the chance to
@@ -44,6 +44,13 @@
 
 
 <style scoped>
+
+
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
+
 .landing-page-2 {
   width: 100%;
   height: auto;
@@ -95,8 +102,8 @@
   margin-top: 10rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-family: "Copperplate Gothic", sans-serif;
-  font-size: 5vw;
+  font-family: "Gothic", sans-serif;
+  font-size: 4vw;
   text-align: center;
   line-height: 1.2;
 }
@@ -111,7 +118,7 @@
 }
 
 .heading {
-  font-family: "Copperplate Gothic", sans-serif;
+  font-family: "Gothic", sans-serif;
   color: white;
   font-size: 2.4vw;
   font-weight: 400px;

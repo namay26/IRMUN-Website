@@ -8,7 +8,6 @@
 <style scoped>
 .landing-page-3 {
   z-index: 1;
-  background: url("../assets/SnowFall.png") no-repeat center center/cover;
   width: 100%;
   height: 100vh;
   display: flex;

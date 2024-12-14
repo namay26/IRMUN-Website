@@ -2,7 +2,7 @@
     <div class="team-section">
       <div class="text-headings">
         <h1 class="heading-primary">
-          <span class="meet">MEET</span> <span class="the">THE</span> <span class="team2">TEAM</span>
+          <span class="meet">MEET</span> <span class="the">the</span> <span class="team2">TEAM</span>
         </h1>
       </div>
 
@@ -141,6 +141,11 @@
   src: url("@/assets/fonts/Assassin$.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
+
 .team-section {
   padding: 2rem;
   color: white;
@@ -205,6 +210,7 @@
   transform: translateX(-4%);
   top:-50px;
 }
+
 
 .section-sub .textbox {
   height:300px;
@@ -363,7 +369,7 @@
 }
 
 .heading-primary {
-  font-family: "Frozito", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
   background-image: url("@/assets/texture.jpg");
   background-size: cover;

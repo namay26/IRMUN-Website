@@ -41,7 +41,9 @@ export default {
   position: relative;
 }
 .wrapper{
-background: url("@/assets/backgroundcom.png") no-repeat center center scroll;
+background: url("@/assets/backgroundcom.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
 display: flex;
   flex-direction: column;
   align-items: center;

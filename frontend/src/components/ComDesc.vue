@@ -1,23 +1,28 @@
 <template>
   <div class="landing-page-2">
     <div class="container 1">
-      <div class="header">UNSC CCC</div>
+      <div class="header">CCC</div>
+      Year 2040: A World on the Brink of Collapse
     </div>
     <div class="container 2">
       <div class="header">DISEC</div>
+      Discussing the situation in Syria with the emphasis on modern warfare
     </div>
     <div class="container 3">
       <div class="header">AIPPM</div>
+      Deliberation on Reforms for India's Electoral System: Fulfilling perspective of the Democratic and Constitutional Fabric
     </div>
     <div class="container 4">
       <div class="header">UNHRC</div>
-
+      Addressing Systemic Opression and Safeguarding Women's and Minority Rights in Afghanistan Post-Taliban Takeover
     </div>
     <div class="container 5">
       <div class="header">SOCHUM</div>
+      Addressing all forms of discrimination against civilians in conflicted and post-conflicted regions with special emphasis on trefugees and marginalised group
     </div>
     <div class="container 6">
       <div class="header">AISM</div>
+      Discussing upon the caste based census with special emphasis on caste reservation
     </div>
     <div class="container 7">
       <div class="header">IP</div>
@@ -59,6 +64,10 @@ export default {};
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: black;
+  font-size: 1.6vw;
+  padding: 0 4rem;
+  text-align: center;
 }
 
 .header {

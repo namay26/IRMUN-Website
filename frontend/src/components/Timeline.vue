@@ -1,7 +1,5 @@
 <template>
   <div class="landing-page-1">
-    <img src="@/assets/Group.png" class="flake snow" />
-    <img src="@/assets/Flake2.png" class="flake2 snow" />
     <div class="time">
       <div class="container-1">
         <div class="countdown">
@@ -25,10 +23,9 @@
         </div>
       </div>
       <div class="date">
-        <h2 class="heading-secondary-date">17 - 19 January</h2>
+        <h2 class="heading-secondary-date">17 - 19 January 2025</h2>
       </div>
     </div>
-    <img src="@/assets/Flake3.png" class="flake3 snow" />
   </div>
 </template>
 
@@ -86,10 +83,10 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 60%;
+  height: 70%;
   background: url("../assets/thomso.png") no-repeat center bottom;
   background-size: cover;
-  transform: translate(0%, 80%);
+  transform: translate(0%, 50%);
   z-index: inherit;
 }
 
@@ -132,7 +129,7 @@ export default {
 
 .heading-secondary-date {
   position: relative;
-  margin-top:72%;
+  margin-top:40%;
   font-family: "Iceberg", sans-serif;
   color: white;
   font-size: 7vw;
