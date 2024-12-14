@@ -5,24 +5,24 @@
         <div class="header">PAYMENT</div>
 
         <div class="content">
-          <form @submit.prevent = "handleSubmit">
-            <input type="text" id="munId" name="name" placeholder="MUNarchy ID" v-model="munarchy_id"/>
+          <form @submit.prevent="handleSubmit">
+            <input type="text" id="munId" name="name" placeholder="MUNarchy ID" v-model="munarchy_id" />
             <button type="submit" class="payBtn2">Check</button>
           </form>
           <h3 class="notFound" v-if="visibilityStatus[0]">ID does not exist</h3>
           <h3 class="completed" v-if="visibilityStatus[1]">Payment has already been completed</h3>
           <h3 class="completed" v-if="visibilityStatus[2]">Complete your payment now !</h3>
-          <form v-if="visibilityStatus[2]" @submit.prevent = "initatePayment">
-            <div class = "qualColor">
-                MUNarchy has provision for participants' residences in the guest houses/ hostel rooms of IIT Roorkee
-                inside the campus itself. IITR has multiple comfortable guest houses/guest rooms. The team will make all
-                the arrangements. We recommend availing yourself of the accommodation facility to avoid the hassle of
-                travelling and living outside the campus.
-                The accommodation is limited; the team will allot hostels on a first-come, first-serve basis. Any later
-                request a few days before the event to provide accommodation can't be guaranteed and is subject to
-                availability.
-                <br>
-              </div>
+          <form v-if="visibilityStatus[2]" @submit.prevent="initatePayment">
+            <div class="qualColor">
+              MUNarchy has provision for participants' residences in the guest houses/ hostel rooms of IIT Roorkee
+              inside the campus itself. IITR has multiple comfortable guest houses/guest rooms. The team will make all
+              the arrangements. We recommend availing yourself of the accommodation facility to avoid the hassle of
+              travelling and living outside the campus.
+              The accommodation is limited; the team will allot hostels on a first-come, first-serve basis. Any later
+              request a few days before the event to provide accommodation can't be guaranteed and is subject to
+              availability.
+              <br>
+            </div>
             <div>
               <input type="radio" id="yesAccom" class="radioStyles" name="accommodation"
                 :value="AccommodationChoices.YES" v-model="user.accommodation" required>
@@ -33,14 +33,23 @@
                 v-model="user.accommodation">
               <label for="noAccom" class="accomText">No, only participation without accommodation (Rs. 1600.00)</label>
             </div>
-        <button type="submit" class="payBtn">Pay</button>
-        </form>
+            <div class="termsCheckbox">
+              <input type="checkbox" id="terms" v-model="termsAccepted" required>
+              <label for="terms">
+                I agree to the
+                <a href="/termsandconditions" target="_blank">Terms and Conditions</a>.
+              </label>
+            </div>
+
+            <button type="submit" class="payBtn" :disabled="!termsAccepted">Pay</button>
+
+          </form>
+        </div>
       </div>
+
+
     </div>
-
-
-  </div>
-  <Footer />
+    <Footer />
   </div>
 </template>
 
@@ -61,22 +70,23 @@ export default {
       AccommodationChoices,
       user: RegistrationModel,
       munarchy_id,
-      visibilityStatus
-  }
+      visibilityStatus,
+    termsAccepted: false
+    }
   },
-  methods:{
-    async handleSubmit(){
+  methods: {
+    async handleSubmit() {
       const postDict = {
-        munarchy_id : this.munarchy_id
+        munarchy_id: this.munarchy_id
       };
-      try{
+      try {
         const response = await AxiosServices('/api/checkStatus', postDict);
         const pay_status = response["pay_status"]
         console.log(pay_status);
 
-        switch (pay_status){
+        switch (pay_status) {
           case true:
-            this.visibilityStatus = [false,true,false]
+            this.visibilityStatus = [false, true, false]
             break;
           case false:
             this.visibilityStatus = [false, false, true]
@@ -85,21 +95,21 @@ export default {
             return
         }
 
-      }catch(e){
+      } catch (e) {
         console.log(`Error Occured while processing your request. ${e}`)
-        this.visibilityStatus = [true,false,false]
+        this.visibilityStatus = [true, false, false]
       }
     },
-    async initatePayment(){
+    async initatePayment() {
       const paymentRecd = {
         "munarchy_id": this.munarchy_id,
         "accomodation_status": this.user.accommodation
       }
-      try{
+      try {
         const response = await AxiosServices('/api/payments', paymentRecd)
         console.log(response)
         window.location.href = response
-      }catch(e){
+      } catch (e) {
         alert(`Error Occured while processing your request. Please try again later ! \n${e}`)
       }
       console.log(this.user.accommodation)
@@ -128,7 +138,8 @@ a {
   color: green;
   text-align: center;
 }
-.accomText{
+
+.accomText {
   color: #1E262F
 }
 
@@ -158,6 +169,7 @@ form {
   justify-content: center;
 
 }
+
 .radioStyles {
   margin: 0 0.3rem;
 }
@@ -204,6 +216,7 @@ input:active {
   transition: all 0.3s ease;
 
 }
+
 .qualColor {
   background: #D9D9D9;
   border: none;
@@ -272,6 +285,27 @@ input:active {
   border-radius: 1rem;
   border: 0.2rem solid white;
   margin-bottom: 1rem;
+}
+
+.termsCheckbox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #1e262f;
+}
+
+.termsCheckbox label {
+  margin-left: 0.5rem;
+}
+
+.termsCheckbox a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.termsCheckbox a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
