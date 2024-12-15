@@ -470,7 +470,7 @@ export default {
       try {
         if (this.validateForm()) {
           console.log('Submitting user data:', this.user);
-          localStorage.setItem("name",this.user.name);
+          sessionStorage.setItem("name",this.user.name);
           const response = await AxiosServices("/api/register", this.user);
           console.log(response);
           alert(response["message"]);

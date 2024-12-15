@@ -108,6 +108,7 @@ export default {
       try {
         const response = await AxiosServices('/api/payments', paymentRecd)
         console.log(response)
+        localStorage.setItem("initiatePayment",true);
         window.location.href = response
       } catch (e) {
         alert(`Error Occured while processing your request. Please try again later ! \n${e}`)

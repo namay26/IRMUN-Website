@@ -28,7 +28,7 @@ import router from '@/router';
 
 export default {
   data(){
-    const username = localStorage.getItem("name");
+    const username = sessionStorage.getItem("name");
     return{
     router,
     username
