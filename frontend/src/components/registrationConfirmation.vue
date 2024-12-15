@@ -5,7 +5,7 @@
       <div class="header">THANKS FOR REGISTERING!</div>
       <div class="wrapper">
       <div class="content">
-        Hi!<br>Your MUNarchy ID will be mailed to you shortly.
+        Hi {{ username }}!<br>Your MUNarchy ID will be mailed to you shortly.
         Upon recieving your MUNarchy ID you may click on the button below to make your payment and complete your registration. Alternatively, you
         may also complete your payments later by following these steps:<br>
         <ol>
@@ -28,7 +28,11 @@ import router from '@/router';
 
 export default {
   data(){
-    router
+    const username = localStorage.getItem("name");
+    return{
+    router,
+    username
+  }
   },
   methods: {
     onPaymentButtonClick(){

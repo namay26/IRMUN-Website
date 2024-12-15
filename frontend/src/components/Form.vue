@@ -469,8 +469,8 @@ export default {
     async handleSubmit() {
       try {
         if (this.validateForm()) {
-
           console.log('Submitting user data:', this.user);
+          localStorage.setItem("name",this.user.name);
           const response = await AxiosServices("/api/register", this.user);
           console.log(response);
           alert(response["message"]);
