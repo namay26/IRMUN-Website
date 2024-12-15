@@ -471,10 +471,11 @@ export default {
         if (this.validateForm()) {
 
           console.log('Submitting user data:', this.user);
-          const response = await AxiosServices("/api/register", this.user)
+          const response = await AxiosServices("/api/register", this.user);
           console.log(response);
-          alert(response["message"])
-          this.router.push('/')
+          alert(response["message"]);
+          localStorage.setItem("registration",true);
+          this.router.push('/reg-confirm');
         }
       } catch (error) {
         console.error('Registration failed:', error);

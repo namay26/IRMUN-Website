@@ -11,6 +11,7 @@ import Successful from "@/components/successful.vue";
 import Unsuccessful from "@/components/Unsuccessful.vue";
 import TermsAndConditions from "@/components/TermsAndConditions.vue";
 import FaqPortal from "@/components/FaqPortal.vue";
+import RegistrationSuccesful from "@/components/registrationConfirmation.vue"
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -25,6 +26,7 @@ const routes = [
   { path: "/unsuccessful", name: "Unsuccessful", component: Unsuccessful },
   { path: "/termsandconditions", name: "TermsAndConditions", component: TermsAndConditions },
   { path: "/faq", name: "FaqPortal", component: FaqPortal },
+  {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful}
 
 ];
 
