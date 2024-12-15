@@ -14,6 +14,7 @@
       <router-link to="/eb-portal">EB Portal</router-link>
       <router-link to="/committees">Committees</router-link>
       <router-link to="/team">Team</router-link>
+      <router-link to="/faq">FAQ</router-link>
       <a class="down" href="https://drive.google.com/file/d/1axKc71YQ8RmfMHlbdyPVpH1mAPlW2_HO/view" target="_blank">Brochure</a>
       <router-link class="register" to="/welcome" style="color:white;">Register</router-link>
 
