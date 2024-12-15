@@ -72,6 +72,28 @@
         </li>
       </ul>
     </section>
+
+    <section class="terms-section">
+      <h2>Miscellaneous</h2>
+      <ul>
+        <li>Participants are advised to follow a proper code of conduct during the event and during their residence in IITR. Participants agree to abide by the code of conduct.</li>
+        <li>
+          Code of Conduct:
+          <ul>
+              <li>Respect all delegates, organisers, and staff.</li>
+              <li>Adhere to the appropriate dress code and behave professionally.</li>
+              <li>Any form of discrimination, harassment or misconduct will not be tolerated and would be acted upon as per IITR administration rules and procedures</li>
+              <li>Engage constructively and respectfully in all debates, committees and discussions.</li>
+          </ul>
+        </li>
+        <li>
+          The data collected by IRMUN will be handled appropriately and will not be misused by IRMUN.
+        </li>
+        <li>
+          The data may be shared with third parties to improve the quality of event/ promotional activities.
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
