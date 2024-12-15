@@ -1,16 +1,17 @@
 <template>
   <div class="welcomePage">
-     <div class="landing-page">
+    <div class="landing-page">
       <div class="container">
-      <div class="header">WELCOME!</div>
-       <div class="content">
+        <div class="header">WELCOME!</div>
+        <div class="content">
 
-    <div class="register">
-     <router-link to="/register">NEW REGISTRATION</router-link>
-    </div>
-    <div class="payment"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
-    </div>
-    </div>
+          <div class="register">
+            <router-link to="/register">NEW REGISTRATION</router-link>
+          </div>
+          <div class="payment"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
+          <div class="allotment"><router-link to="/allotment">CHECK ALLOTMENT STATUS</router-link></div>
+        </div>
+      </div>
 
 
     </div>
@@ -30,7 +31,6 @@ export default {
 </script>
 
 <style scoped>
-
 @font-face {
   font-family: "Frozito";
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
@@ -42,25 +42,24 @@ a {
 }
 
 .welcomePage {
-display: flex;
+  display: flex;
   flex-direction: column;
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  margin:0;
+  margin: 0;
 }
 
-.content{
-position:relative;
-display:flex;
-flex-direction:column;
-width:60%;
-justify-content:center;
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
 }
 
-.payment{
+.payment, .allotment {
   font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
@@ -73,11 +72,11 @@ justify-content:center;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
-.register{
-font-family: "Copperplate", sans-serif;
+.register {
+  font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 90%;
@@ -90,7 +89,7 @@ font-family: "Copperplate", sans-serif;
   align-items: center;
   height: 4rem;
   margin: 1rem auto;
-  padding:0.5rem;
+  padding: 0.5rem;
 
 }
 
@@ -136,16 +135,18 @@ font-family: "Copperplate", sans-serif;
   font-size: 2vw;
   border-radius: 1rem;
   border: 0.2rem solid white;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .container {
-   top:15vh;
+    top: 15vh;
     width: 90%;
     border-radius: 10px;
   }
-  .register{
-  font-size:2vw;
+
+  .register {
+    font-size: 2vw;
   }
 
 
@@ -153,19 +154,20 @@ font-family: "Copperplate", sans-serif;
 
 @media screen and (max-width: 480px) {
   .container {
-    top:8vh;
+    top: 8vh;
     width: 90%;
     margin: 3rem auto;
     padding: 0.5rem;
   }
 
-  .header{
-   height: 6vh;
+  .header {
+    height: 6vh;
   }
-  .register{
-  font-size:2vw;
-  height:3rem;
-  margin:0.5rem auto;
+
+  .register {
+    font-size: 2vw;
+    height: 3rem;
+    margin: 0.5rem auto;
 
   }
 }
@@ -175,5 +177,4 @@ font-family: "Copperplate", sans-serif;
     margin-top: 0;
   }
 }
-
 </style>

@@ -451,7 +451,6 @@ export default {
     Footer,
   },
   data() {
-    console.log("Code is working");
     return {
       GenderChoices,
       QualificationChoices,
