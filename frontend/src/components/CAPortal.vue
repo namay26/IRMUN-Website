@@ -6,6 +6,7 @@
       <div class="text-headings">
         <h1 class="heading-primary">CAMPUS</h1>
         <h2 class="heading-sec">AMBASSADOR</h2>
+        <a href="https://docs.google.com/forms/d/1uzRJhRJlAfPvv2KGUr35eDOUuaCVICwm-3IsGeVmP1k/edit"><button class="btn btn-primary">Register as CA</button></a>
       </div>
 
     </div>
@@ -30,6 +31,16 @@ components: {
 @font-face {
   font-family: "CollegiateBlackFLF";
   src: url("@/assets/fonts/CollegiateBlackFLF.ttf") format("truetype");
+}
+
+.btn{
+  margin-top: 2rem;
+  background-color: #1E262F;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .caportal{
