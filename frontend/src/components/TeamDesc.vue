@@ -146,6 +146,14 @@
   src: url("@/assets/fonts/Gothic.ttf") format("truetype");
 }
 
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
+
 .team-section {
   padding: 2rem;
   color: white;
@@ -241,7 +249,7 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: "Assassin$", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3em;
 }
 
@@ -287,7 +295,7 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: "Assassin$", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3em;
 }
 
@@ -332,7 +340,7 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: "Assassin$", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3em;
 }
 
@@ -369,14 +377,8 @@
 }
 
 .heading-primary {
-  font-family: "Gothic", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
-  background-image: url("@/assets/texture.jpg");
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .team-grid {

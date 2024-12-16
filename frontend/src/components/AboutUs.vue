@@ -33,6 +33,13 @@ export default {
 
 
 <style scoped>
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
 .landing-page-2 {
   display: flex;
   flex-direction: column;
@@ -50,13 +57,11 @@ display: flex;
   padding:2rem;
 }
 .content{
-  color: black;
-  text-align: center;
- font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
- margin:4rem;
- margin-top:6rem;
- font-size:1.5rem;
+  color:black;
+  font-size:1.2vw;
+ font-family: "Roboto", sans-serif;
+ margin:6rem 4vw;
+text-align: center;
 }
 
 .bgcom {
@@ -81,7 +86,6 @@ display: flex;
 
 .header {
   font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
   color: white;
   position: absolute;
   top: -4%;
@@ -175,7 +179,23 @@ display: flex;
 
   .content{
 
- font-size:0.7rem;
+font-size:0.7rem;
 }
+}
+
+@media(max-width: 1024px){
+  .content{
+    font-size:1.7vw;
+  }
+}
+
+@media(max-width: 600px){
+ .header{
+   font-size: 3vw;
+ }
+ .content{
+   margin:6vh 2vw;
+   font-size:1.5vw;
+ }
 }
 </style>

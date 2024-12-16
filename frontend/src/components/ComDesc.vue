@@ -35,10 +35,14 @@ export default {};
 </script>
 
 <style scoped>
+
+
+
 @font-face {
-  font-family: "Frozito";
-  src: url("@/assets/fonts/Frozito.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
+
 
 .bgcom {
   width: 100%;
@@ -62,6 +66,7 @@ export default {};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
   align-items: center;
   justify-content: center;
   color: black;
@@ -87,13 +92,26 @@ export default {};
   border: 0.2rem solid white;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
   .header{
     font-size: 5vw;
     height: 6vh;
   }
   .container{
     height: 300px;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 485px) {
+  .header{
+    font-size: 5vw;
+    height: 6vh;
+  }
+  .container{
+    height: 200px;
+    margin:2rem;
+    padding:0 1rem;
   }
 }
 

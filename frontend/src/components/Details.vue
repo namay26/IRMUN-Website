@@ -30,6 +30,14 @@ export default {
 
 
 <style scoped>
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
 .landing-page-2 {
   display: flex;
   flex-direction: column;
@@ -48,11 +56,9 @@ display: flex;
 }
 .content{
   color:black;
-  margin-top:6rem;
-  font-size:1.5rem;
- font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
- margin:4rem;
+  font-size:1.2vw;
+ font-family: "Roboto", sans-serif;
+ margin:6rem 4vw;
 text-align: center;
 }
 
@@ -78,7 +84,7 @@ text-align: center;
 
 .header {
   font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
+
   color: white;
   position: absolute;
   top: -4%;
@@ -87,6 +93,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   background: #1E262F;
   font-size: 1.6rem;
   border-radius: 1.5vw;
@@ -151,6 +158,13 @@ text-align: center;
   }
 }
 
+
+@media(max-width: 1024px){
+  .content{
+    font-size:1.7vw;
+  }
+}
+
 @media (max-width: 485px) {
   .flake4 {
     height: 40%;
@@ -174,5 +188,16 @@ text-align: center;
 
  font-size:0.7rem;
 }
+}
+
+
+@media(max-width: 600px){
+  .header{
+    font-size: 3vw;
+  }
+  .content{
+    margin:6vh 2vw;
+    font-size:1.5vw;
+  }
 }
 </style>

@@ -60,6 +60,12 @@
   justify-content: center;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
 .container-2 {
   margin-top: 4rem;
   position: relative;
@@ -84,7 +90,8 @@
 
 .caexplain {
   z-index: 3;
-  font-size: 2.5vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -149,6 +156,7 @@ p {
   margin: 1.6rem;
   width: 50%;
   font-weight:400;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sec,

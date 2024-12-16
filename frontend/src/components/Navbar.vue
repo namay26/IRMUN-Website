@@ -41,6 +41,7 @@ export default {
 <style scoped>
 
 .register{
+  height:10%;
   background-color: #1E262F;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -51,7 +52,7 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 6vw;
+  height: 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,10 +63,9 @@ export default {
 
 .navbar-bg {
   position: absolute;
-  top: -5rem;
+  top: -7rem;
   left: 0;
   width: 100%;
-
   z-index: -1;
 }
 
@@ -131,7 +131,7 @@ padding-top:5px;
   top: -8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -189,7 +189,20 @@ padding-top:5px;
 
 @media (max-width: 1140px) {
   .navbar-bg {
+    top: -2.4rem;
+  }
+  .navbar{
+    height: 5.5vw;
+  }
+}
+
+
+@media (max-width: 998px) {
+  .navbar-bg {
     top: -1.5rem;
+  }
+  .navbar{
+    height: 7vw;
   }
 }
 
@@ -202,6 +215,7 @@ padding-top:5px;
     padding-top:1.2rem;
   }
 }
+
 
 @media (max-width: 425px) {
   .navbar-bg {

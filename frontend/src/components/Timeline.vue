@@ -78,6 +78,15 @@ export default {
   font-family: "Iceberg";
   src: url("@/assets/fonts/Iceberg.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
+
 
 .time {
   display: flex;
@@ -129,10 +138,10 @@ export default {
 
 .heading-secondary-date {
   position: relative;
-  margin-top:40%;
-  font-family: "Iceberg", sans-serif;
-  color: white;
-  font-size: 7vw;
+  margin-top:45%;
+  font-family: "Gothic", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 6vw;
 }
 
 .heading-secondary-time {
@@ -204,6 +213,21 @@ export default {
     top: -5%;
   }
 }
+
+@media (max-width: 1580px) {
+  .heading-secondary-date{
+    margin-top: 55%;
+  }
+}
+
+
+@media (max-width: 1220px) {
+  .heading-secondary-date{
+    margin-top: 65%;
+  }
+}
+
+
 
 
 

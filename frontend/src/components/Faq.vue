@@ -1,6 +1,6 @@
 <template>
   <div class="faq-page">
-    <h1 class="faq-title">FAQs</h1>
+    <h1 class="faq-title">FAQ</h1>
     <div class="faq-container" v-for="(faq, index) in faqs" :key="index">
       <div class="faq-header" @click="toggle(index)">
         {{ faq.question }}
@@ -115,7 +115,6 @@ export default {
 .faq-page {
   width: 100%;
   min-height: 100vh;
-  background: url("@/assets/snow-bg.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +122,7 @@ export default {
 }
 
 .faq-title {
-  font-family: "Frozito", sans-serif;
+  font-family: "Assassin$", sans-serif;
   color: white;
   font-size: 3rem;
   margin-bottom: 2rem;

@@ -73,9 +73,8 @@
 }
 
 .heading-tert{
-  font-family: "Spirit", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2vw;
-  font-weight: bold;
   color: #fff;
 
 }

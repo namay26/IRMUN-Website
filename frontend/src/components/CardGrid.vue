@@ -8,7 +8,7 @@
       </div>
 
       </div>
-    
+
  <div class="secy">
  <Card
       v-for="(card, index) in head"
@@ -31,7 +31,7 @@
 
  <h2>HEADS</h2>
   <div class="card-grid">
-  
+
     <Card
       v-for="(card, index) in cards"
       :key="index"
@@ -43,7 +43,7 @@
 
   <h2>MANAGERS</h2>
   <div class="card-grid">
-  
+
     <Card
       v-for="(card, index) in managers"
       :key="index"
@@ -97,7 +97,7 @@ export default {
       head:[
           { image: divyanshImage, name: "DIVYANSH KOTHARI",role:"SECRETARY GENERAL" },
       ],
-      
+
       adHead:[
       { image: abyaImage, name: "ABYA SINGH",role:"DEPUTY SECRETARY GENERAL" },
       { image: janhaviImage, name: "JANHAVI GHOGARE",role:"DEPUTY SECRETARY GENERAL" },
@@ -139,6 +139,14 @@ export default {
 
 <style scoped>
 
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
+
 .container{
 position:relative;
   top:14vw;
@@ -168,30 +176,26 @@ font-size: 4rem;
   letter-spacing: 0.3em;
   bottom: 20px;
   color:white;
-  
+
 }
 
 .text-headings {
   position: absolute;
-  
+
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   line-height: 1;
   color: #1e262f;
   z-index: 3;
-  
+
 }
 
 .heading-primary {
-  font-family: "Frozito", sans-serif;
+  font-family: "Assassin$", sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
-  background-image: url("@/assets/texture.jpg");
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: white;
+
 }
 .card-grid {
   display: grid;
@@ -227,11 +231,11 @@ display: grid;
   .card-grid {
     grid-template-columns: repeat(2, 1fr); /* For tablets */
   }
- 
+
 }
 
 @media (max-width: 827px) {
-  
+
   .adSecy{
   grid-template-columns: repeat(1, 1fr);
   }
