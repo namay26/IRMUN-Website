@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar">
     <img src="@/assets/Nav Bar.png" alt="Navbar Background" class="navbar-bg" />
-    <router-link to="/"><img src="@/assets/munarchy.png" alt="Logo" class="logo" /></router-link>
+    <router-link to="/">
+      <img src="@/assets/munarchy.png" alt="Logo" class="logo" />
+    </router-link>
 
     <div class="hamburger" @click="toggleMenu">
       <div class="bar"></div>
@@ -9,15 +11,21 @@
       <div class="bar"></div>
     </div>
 
-    <div class="nav-links" :class="{'active': menuOpen}">
-      <router-link to="/ca-portal">CA Portal</router-link>
-      <router-link to="/eb-portal">EB Portal</router-link>
-      <router-link to="/committees">Committees</router-link>
-      <router-link to="/team">Team</router-link>
-      <router-link to="/faq">FAQ</router-link>
-      <a class="down" href="https://drive.google.com/file/d/1axKc71YQ8RmfMHlbdyPVpH1mAPlW2_HO/view" target="_blank">Brochure</a>
-      <router-link class="register" to="/welcome" style="color:white;">Register</router-link>
-
+    <div class="nav-links" :class="{ active: menuOpen }">
+      <router-link to="/ca-portal" @click="closeMenu">CA Portal</router-link>
+      <router-link to="/eb-portal" @click="closeMenu">EB Portal</router-link>
+      <router-link to="/committees" @click="closeMenu">Committees</router-link>
+      <router-link to="/team" @click="closeMenu">Team</router-link>
+      <router-link to="/faq" @click="closeMenu">FAQ</router-link>
+      <a
+        class="down"
+        href="https://drive.google.com/file/d/1BpYchR84wL3Ax9YLUAty-SAstRqKYrqr/view?usp=sharing"
+        target="_blank"
+        @click="closeMenu"
+      >Brochure</a>
+      <router-link class="register" to="/welcome" style="color: white;" @click="closeMenu">
+        Register
+      </router-link>
     </div>
   </nav>
 </template>
@@ -33,10 +41,14 @@ export default {
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
-    }
-  }
+    },
+    closeMenu() {
+      this.menuOpen = false;
+    },
+  },
 };
 </script>
+
 
 <style scoped>
 
@@ -62,6 +74,7 @@ export default {
 }
 
 .navbar-bg {
+  pointer-events: none;
   position: absolute;
   top: -7rem;
   left: 0;

@@ -3,35 +3,34 @@
   <div >
   <img src="../assets/house.png" class="house"></img>
   </div>
-  
+
   <div class="footer-section">
-   
-    
-     
+
+
+
     <div class="direction">
      <img src="../assets/IRMUN Logo.png" alt="Logo" class="logo" />
-    <h2>Get Direction </h2>
+    <h2><u>Get Direction</u> </h2>
     <h3>IRMUN Office,Student Activity Centre </h3>
     <h3>Indian Institute of Technology,Roorkee </h3>
+    <h3>Roorkee, Haridwar </h3>
+    <h3>Uttarakhand, India</h3>
+    <h3>247667</h3>
 
     <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/ir_mun.s/?hl=en"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:irmun@iitr.ac.in"><i class="fa fa-envelope"></i></a>
           </div>
     </div>
     <div class="contacts">
     <h2>Contact Us </h2>
-    <h3>Mail Id: irmun@iitr.ac.in </h3>
     <p class="contact">
             Divyansh : +91 89496 08718<br />
             Manmath : +91 77560 17385
 
           </p>
     </div>
-    
+
   </div>
 
 </template>
@@ -41,8 +40,8 @@
 export default {
 name: "Demo",
 components: {
-  
- 
+
+
 },
 };
 </script>
@@ -55,7 +54,7 @@ width:100%;
 .footer-section{
 width: 100vw;
   background-color: #1D1D1D;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -63,7 +62,7 @@ width: 100vw;
   color:#CFF8FE;
   box-sizing: border-box;
   padding:50px;
-  
+
 }
 
 
@@ -92,6 +91,6 @@ display: flex;
   p{
   font-size:10px;}
 
-  
+
 }
 </style>

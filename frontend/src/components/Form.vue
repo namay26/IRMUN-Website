@@ -17,7 +17,7 @@
               <input type="email" class="formInputs" name="email" placeholder="Email Address" v-model="user.email_id"
                 required />
 
-              <label for="gender" class="heading">Gender:</label>
+              <label for="gender" class="heading">Gender (For Accommodation):</label>
               <div class="qualColor">
                 <div>
                   <input type="radio" id="female" class="radioStyles" name="gender" :value="GenderChoices.FEMALE"
@@ -29,12 +29,6 @@
                   <input type="radio" id="male" class="radioStyles" name="gender" :value="GenderChoices.MALE"
                     v-model="user.sex">
                   <label for="male">Male</label>
-                </div>
-
-                <div>
-                  <input type="radio" id="other" class="radioStyles" name="gender" :value="GenderChoices.OTHERS"
-                    v-model="user.sex">
-                  <label for="other">Other</label>
                 </div>
               </div>
 
@@ -538,11 +532,9 @@ a {
 .welcomePage {
   display: flex;
   flex-direction: column;
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   margin: 0;
 }
 

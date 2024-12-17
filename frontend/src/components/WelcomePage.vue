@@ -8,7 +8,7 @@
           <div class="register">
             <router-link to="/register">NEW REGISTRATION</router-link>
           </div>
-          <div class="payment"><router-link to="/payment">CHECK PAYMENT STATUS</router-link></div>
+          <div class="payment"><router-link to="/payment">MAKE PAYMENT/<br />CHECK PAYMENT STATUS</router-link></div>
           <div class="allotment"><router-link to="/allotment">CHECK ALLOTMENT STATUS</router-link></div>
         </div>
       </div>
@@ -71,6 +71,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+
   margin: 1rem auto;
   padding: 0.5rem;
 }
@@ -172,9 +174,41 @@ a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 485px) {
+  .header{
+    font-size: 5vw;
+  }
   .heading-primary {
     margin-top: 0;
+  }
+  .allotment,.payment,.register {
+    font-size: 2vw;
+  }
+}
+
+
+@media (max-width: 920px){
+  .container {
+    top: 15vh;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .register {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 610px){
+  .container {
+    top: 15vh;
+    width: 90%;
+    border-radius: 10px;
+    height: 50vh;
+  }
+
+  .register {
+    font-size: 2vw;
   }
 }
 </style>

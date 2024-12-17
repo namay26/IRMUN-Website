@@ -1,7 +1,7 @@
 <template>
   <div class="welcomePage">
     <div class="landing-page">
-      <div class="container">
+      <div :class="containerStyleClass">
         <div class="header">PAYMENT</div>
 
         <div class="content">
@@ -23,12 +23,12 @@
               availability.
               <br>
             </div>
-            <div>
+            <div class="choice">
               <input type="radio" id="yesAccom" class="radioStyles" name="accommodation"
                 :value="AccommodationChoices.YES" v-model="user.accommodation" required>
               <label for="yesAccom" class="accomText">Yes, avail in-house accommodation (Rs. 3000.00)</label>
             </div>
-            <div>
+            <div class="choice">
               <input type="radio" id="noAccom" class="radioStyles" name="accommodation" :value="AccommodationChoices.NO"
                 v-model="user.accommodation">
               <label for="noAccom" class="accomText">No, only participation without accommodation (Rs. 1600.00)</label>
@@ -49,8 +49,8 @@
 
 
     </div>
-    <Footer />
   </div>
+  <Footer />
 </template>
 
 <script>
@@ -58,6 +58,7 @@
 import { AccommodationChoices, RegistrationModel } from "@/models/registrationModel";
 import Footer from "./Footer.vue";
 import { AxiosServices } from "@/services/api_services/api_services";
+
 export default {
   name: "Welcome",
   components: {
@@ -71,7 +72,9 @@ export default {
       user: RegistrationModel,
       munarchy_id,
       visibilityStatus,
-    termsAccepted: false
+    termsAccepted: false,
+    containerStyleClass: "container"
+
     }
   },
   methods: {
@@ -80,6 +83,7 @@ export default {
         munarchy_id: this.munarchy_id
       };
       try {
+        this.containerStyleClass = "suc-container";
         const response = await AxiosServices('/api/checkStatus', postDict);
         const pay_status = response["pay_status"]
         console.log(pay_status);
@@ -121,6 +125,11 @@ export default {
 
 <style scoped>
 @font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Frozito";
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
 }
@@ -138,6 +147,7 @@ a {
 .completed {
   color: green;
   text-align: center;
+  font-size: 1.2vw;
 }
 
 .accomText {
@@ -153,12 +163,10 @@ form {
 .welcomePage {
   display: flex;
   flex-direction: column;
-  background: url("@/assets/SnowFallBg.png") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
-  height: 130vh;
-  /* min-height: 100vh; */
-  overflow: hidden;
+  height: 100vh;
+  /* overflow: hidden; */
   margin: 0;
 }
 
@@ -166,7 +174,7 @@ form {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  max-width: 60%;
   justify-content: center;
 
 }
@@ -176,17 +184,16 @@ form {
 }
 
 #munId {
-  width: 80%;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
+  height: 3.6vh;
   margin: 1rem auto;
   padding: 0.5rem;
   font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 0.8vw;
   background: #D9D9D9;
   border: none;
 }
@@ -194,6 +201,10 @@ form {
 input:active {
   border: none;
   outline: none;
+}
+
+.choice{
+  font-size: 0.8vw;
 }
 
 .payBtn,
@@ -204,13 +215,13 @@ input:active {
   color: white;
   width: 60%;
   background: #1E262F;
-  font-size: 1.5rem;
+  font-size: 1vw;
   border-radius: 0.8rem;
   text-align: center;
 
   justify-content: center;
   align-items: center;
-  height: 4rem;
+  height: 4vh;
   margin: 1rem auto;
   padding: 0.5rem;
   cursor: pointer;
@@ -222,19 +233,13 @@ input:active {
   background: #D9D9D9;
   border: none;
   border-radius: 0.3rem;
-  padding: 0.5rem;
+  padding: 1vw 2vw;
   margin: 0.6rem auto;
-  font-family: "Copperplate", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 1rem;
-  color: grey;
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  color: black;
   text-align: justify;
 }
-
-
-/* .payBtn {
-  display: none;
-} */
 
 .payBtn:hover,
 .payBtn:hover {
@@ -245,7 +250,7 @@ input:active {
 .landing-page {
   flex: 1;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
 }
@@ -253,12 +258,8 @@ input:active {
 .container {
   position: relative;
   top: 18vw;
-  width: 60%;
-  max-width: 800px;
-  max-height: 200%;
-  min-height: 120%;
-  /* aspect-ratio: 3 / 2; */
-  margin: 2rem auto;
+  width: 40vw;
+  height: 30vh;
   background: #fff url("@/assets/combg.png") no-repeat center center;
   background-size: cover;
   border-radius: 1.6vw;
@@ -267,9 +268,24 @@ input:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2vw;
 }
 
+.suc-container{
+  position: relative;
+  top: 18vw;
+  width: 40vw;
+  height: auto;
+  background: #fff url("@/assets/combg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 1.6vw;
+  box-shadow: 0 4px 8px rgba(141, 71, 71, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
 .header {
   font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
@@ -309,50 +325,84 @@ input:active {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    top: 15vh;
+@media (max-width: 1024px) {
+
+  .payBtn2{
+    font-size: 1.2vw;
+    height: 4vh;
+  }
+  .suc-container{
+    height: auto;
+    padding-top: 5vh;
+  }
+  .container{
+    height: 40vh;
+  }
+  #munId{
+    font-size:2vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .payBtn2{
+    font-size: 1.8vw;
+    width: 70%;
+  }
+  .container{
+    margin-top: 20vh;
+    width: 70vw;
+  }
+  .suc-container{
+    margin-top: 20vh;
+    width: 70vw;
+  }
+  .qualColor{
+    font-size: 1.5vw;
+  }
+  .choice{
+    font-size: 1.5vw;
+  }
+  #munid{
     width: 90%;
-    border-radius: 10px;
   }
-
-  .payBtn,
-  .payBtn2 {
-    font-size: 1.2rem;
-    height: 3rem;
+  .payBtn{
+    font-size: 1.8vw;
   }
-
-
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    top: 8vh;
+
+@media (max-width: 485px) {
+  .welcomePage{
+    height: 100%;
+  }
+  .header{
+    height: 7vh;
+  }
+  .payBtn2, .payBtn{
+    font-size: 3vw;
+    width: 70%;
+  }
+  .container{
+    margin-top: 10vh;
+    height: 40vh;
+    width: 70vw;
+  }
+  .qualColor{
+    font-size: 2vw;
+  }
+  .suc-container{
+    margin-top: 12vh;
+  }
+  .completed{
+    font-size: 2.5vw;
+  }
+  .choice{
+    font-size: 2vw;
+  }
+  #munid{
     width: 90%;
-    margin: 3rem auto;
-    padding: 0.5rem;
-  }
-
-  .header {
-    height: 6vh;
-  }
-
-  .payBtn,
-  .payBtn2 {
-    font-size: 1rem;
-    height: 2rem;
-    margin: 0.5rem auto;
-
-  }
-
-  #munId {
-    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 425px) {
-  .heading-primary {
-    margin-top: 0;
-  }
-}
 </style>

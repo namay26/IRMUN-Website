@@ -7,7 +7,7 @@ import Team from "@/components/TeamPage.vue";
 import WelcomePage from "@/components/WelcomePage.vue";
 import Payment from "@/components/payment.vue";
 import Form from "@/components/Form.vue";
-import Successful from "@/components/successful.vue";
+import Successful from "@/components/Successful.vue";
 import Unsuccessful from "@/components/Unsuccessful.vue";
 import TermsAndConditions from "@/components/TermsAndConditions.vue";
 import FaqPortal from "@/components/FaqPortal.vue";
@@ -35,6 +35,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0, behavior: 'smooth' };
+  }
 });
 
 export default router;
