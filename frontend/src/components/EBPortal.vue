@@ -44,13 +44,12 @@ export default {
     return {
       CommitteeChoices,
       committeeData: [
-            { name: CommitteeChoices.DISEC, chair: "Prabal", vice: "Jay Surya" },
-            { name: CommitteeChoices.UNSC, chair: "", vice: "Bhumika" },
-            { name: CommitteeChoices.SOCHUM, chair: "Samresh", vice: "" },
-            { name: CommitteeChoices.UNHRC, chair: "Anshika", vice: "Sarthak" },
-            { name: CommitteeChoices.AIPPM, chair: "Kartik Deshmukh", vice: "Sohan" },
-            { name: CommitteeChoices.AISM, chair: "Kushagra", vice: "" },
-            { name: CommitteeChoices.IP, chair: "", vice: "" }
+            { name: CommitteeChoices.DISEC, chair: "Prabal Bafna", vice: "Jay Surya" },
+            { name: CommitteeChoices.UNSC, chair: "Eshwar Chava", vice: "Akshat Pratap Singh" },
+            { name: CommitteeChoices.SOCHUM, chair: "Shivam Gupta", vice: "" },
+            { name: CommitteeChoices.UNHRC, chair: "Anshika Singh", vice: "Sarthak Tyagi" },
+            { name: CommitteeChoices.AIPPM, chair: "Kartik Deshwal", vice: "Sohan Patil" },
+            { name: CommitteeChoices.AISM, chair: "Ayush Vishwakarma", vice: "Prakhar Raj Rastogi" }
           ]
     }
   }

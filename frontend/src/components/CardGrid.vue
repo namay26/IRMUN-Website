@@ -88,10 +88,10 @@ export default {
   data() {
     return {
       cards: [
-        { name: "Kartikey Singh", role: "Sponsorship & Marketing", image: kartikeyImage },
-          { name: "Manmath Ashtikar", role: "Promotions", image: manmathImage },
-          { name: "Ojaswi Chopra", role: "Social Media and Design", image: ojaswiImage },
-          { name: "Avnish Yadav", role: "Organising Committee", image: avnishImage },
+        { name: "Avnish Yadav", role: "Sponsorship & Marketing", image: avnishImage },
+          { name: "Abya Singh", role: "Promotions", image: abyaImage },
+          { name: "Ojaswi Chopra", role: "Design and Technology", image: ojaswiImage },
+          { name: "Janhavi Ghogare", role: "Organising Committee", image: janhaviImage },
       ],
 
       head:[
@@ -99,8 +99,8 @@ export default {
       ],
 
       adHead:[
-      { image: abyaImage, name: "ABYA SINGH",role:"DEPUTY SECRETARY GENERAL" },
-      { image: janhaviImage, name: "JANHAVI GHOGARE",role:"DEPUTY SECRETARY GENERAL" },
+      { image: kartikeyImage, name: "Kartikey Singh",role:"DEPUTY SECRETARY GENERAL" },
+      { image: manmathImage, name: "Manmath Ashtikar",role:"DEPUTY SECRETARY GENERAL" },
       ],
        managers: [
           { name: "Sahil Dagar", role: "Social Media & Design", image: sahilImage },
