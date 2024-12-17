@@ -13,6 +13,7 @@ import TermsAndConditions from "@/components/TermsAndConditions.vue";
 import FaqPortal from "@/components/FaqPortal.vue";
 import RegistrationSuccesful from "@/components/registrationConfirmation.vue"
 import Allotment from "@/components/Allotment.vue";
+import AllotmentCheck from "@/components/AllotmentCheck.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -28,7 +29,8 @@ const routes = [
   { path: "/termsandconditions", name: "TermsAndConditions", component: TermsAndConditions },
   { path: "/faq", name: "FaqPortal", component: FaqPortal },
   {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful},
-  {path: "/allotment", name: "Allotment", component: Allotment}
+  {path: "/allotment", name: "Allotment", component: Allotment},
+  {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck}
 
 ];
 

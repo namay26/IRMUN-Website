@@ -9,7 +9,7 @@
             <router-link to="/register">NEW REGISTRATION</router-link>
           </div>
           <div class="payment"><router-link to="/payment">MAKE PAYMENT/<br />CHECK PAYMENT STATUS</router-link></div>
-          <div class="allotment"><router-link to="/allotment">CHECK ALLOTMENT STATUS</router-link></div>
+          <div class="allotment"><router-link to="/allotment-check">CHECK ALLOTMENT STATUS</router-link></div>
         </div>
       </div>
 
