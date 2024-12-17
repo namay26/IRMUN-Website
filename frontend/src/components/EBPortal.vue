@@ -8,83 +8,19 @@
         <h1 class="heading-primary">EYECUTIVE BOARD</h1>
       </div>
       <div class="eb-cards-container">
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.DISEC }}</div>
+        <div v-for="committee in committeeData" :key="committee.name" class="eb-card-container">
+          <div class="card-head">{{ committee.name }}</div>
           <div class="cardBody">
             <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Prabal</span><br>Chirperson</div>
+            <div class="eb-designation">
+              <span class="chair-name">{{ committee.chair || "TBA" }}</span><br>Chairperson
+            </div>
           </div>
           <div class="cardBody">
             <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Jay Surya</span><br>Vice Chairperson</div>
-          </div>
-        </div>
-
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.UNSC }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name"></span>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Bhumika</span><br>Vice Chairperson</div>
-          </div>
-
-        </div>
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.SOCHUM }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Samresh</span> <br>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name"></span>Vice Chairperson</div>
-          </div>
-        </div>
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.UNHRC }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Anshika</span><br>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Sarthak</span><br>Vice Chairperson</div>
-          </div>
-        </div>
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.AIPPM }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Kartik Deshmukh</span><br>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Sohan</span><br>Vice Chairperson</div>
-          </div>
-        </div>
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.AISM }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name">Kushagra</span><br>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name"></span>Vice Chairperson</div>
-          </div>
-        </div>
-        <div class="eb-card-container">
-          <div class="card-head">{{ CommitteeChoices.IP }}</div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name"></span>Chirperson</div>
-          </div>
-          <div class="cardBody">
-            <div class="eb-image"></div>
-            <div class="eb-designation"><span class = "chair-name"></span>Vice Chairperson</div>
+            <div class="eb-designation">
+              <span class="chair-name">{{ committee.vice || "TBA" }}</span><br>Vice Chairperson
+            </div>
           </div>
         </div>
 
@@ -104,9 +40,18 @@ export default {
   components: {
     EBDesc,
     Footer
-  },data(){
-    return{
-      CommitteeChoices
+  }, data() {
+    return {
+      CommitteeChoices,
+      committeeData: [
+            { name: CommitteeChoices.DISEC, chair: "Prabal", vice: "Jay Surya" },
+            { name: CommitteeChoices.UNSC, chair: "", vice: "Bhumika" },
+            { name: CommitteeChoices.SOCHUM, chair: "Samresh", vice: "" },
+            { name: CommitteeChoices.UNHRC, chair: "Anshika", vice: "Sarthak" },
+            { name: CommitteeChoices.AIPPM, chair: "Kartik Deshmukh", vice: "Sohan" },
+            { name: CommitteeChoices.AISM, chair: "Kushagra", vice: "" },
+            { name: CommitteeChoices.IP, chair: "", vice: "" }
+          ]
     }
   }
 };
@@ -135,11 +80,8 @@ export default {
 
 .ebbg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  height: 90%;
+  top: 5%;
+  aspect-ratio: 1.45;
   object-fit: cover;
   z-index: 2;
 }
@@ -162,10 +104,9 @@ export default {
   gap: 2rem;
   padding: 2rem;
   background-color: rgba(90, 110, 125, 0.2);
-  /* border-radius: 1rem; */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: 120vh;
+  position: absolute;
+  top: 100vh;
 }
 
 .eb-card-container {
@@ -173,21 +114,19 @@ export default {
   background-image: url("@/assets/snow square.png");
   border-radius: 0.75rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
-  /* margin: 1rem; */
-  /* padding: 1rem; */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25rem;
-
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .eb-card-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card-head {
   font-size: 1.5rem;
   font-weight: bold;
@@ -218,9 +157,11 @@ export default {
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
-.chair-name{
+
+.chair-name {
   font-family: "Copperplate Gothic", sans-serif;
 }
+
 .eb-designation {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -231,13 +172,10 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-top: 0.5rem;
-  border: 3px;
   width: 25rem;
   height: 7rem;
   font-family: "Assassin$", sans-serif;
-
 }
-
 
 .snow-bg {
   position: absolute;
@@ -284,45 +222,35 @@ export default {
   color: aliceblue;
 }
 
-@media (max-width: 768px) {
-  .ebbg {
-    top: 40%;
-    width: 80vw;
-    height: 80vw;
-  }
+@media (max-width: 1760px) {
+  .text-headings { top: 95%; }
+  .logo-bg { top: 30%; width: 40%; }
+  .landing-page { height: 270vh; }
+  .eb-cards-container { top: 100%; }
+}
 
-  .glow-bg {
-    top: 40%;
-  }
+@media (max-width: 1328px) {
+  .logo-bg { top: 40%; }
+  .text-headings { top: 95%; }
+  .landing-page { height: 400vh; }
+  .eb-cards-container { top: 105%; }
+}
 
-  .text-headings {
-    top: 72%;
-  }
-
-  .logo-bg {
-    top: 30%;
-    width: 40%;
-  }
+@media (max-width: 896px) {
+  .ebbg { top: 10%; width: 80vw; }
+  .glow-bg { top: 40%; }
+  .logo-bg { top: 35%; width: 50%; }
+  .text-headings { top: 60%; }
+  .eb-cards-container { top: 65%; }
+  .landing-page { height: 670vh; }
 }
 
 @media (max-width: 425px) {
-  .ebbg {
-    top: 20%;
-    width: 60vw;
-    height: 60vw;
-  }
-
-  .glow-bg {
-    top: 20%;
-  }
-
-  .text-headings {
-    top: 35%;
-  }
-
-  .logo-bg {
-    top: 15%;
-    width: 40%;
-  }
+  .ebbg { top: 6%; width: 60vw; }
+  .glow-bg { top: 30%; }
+  .logo-bg { top: 20%; width: 45%; }
+  .text-headings { top: 50%; }
+  .eb-cards-container { top: 50%; }
+  .landing-page { height: 840vh; }
 }
 </style>
