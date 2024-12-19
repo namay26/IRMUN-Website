@@ -15,6 +15,12 @@
 </template>
 
 <style scoped>
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
+
 .landing-page-5 {
   display: flex;
   flex-direction: column;
@@ -36,7 +42,7 @@ display: flex;
     color: black;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 4rem;
@@ -62,7 +68,7 @@ display: flex;
 
 }
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;

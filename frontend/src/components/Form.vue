@@ -855,6 +855,11 @@ export default {
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -924,7 +929,7 @@ a {
   height: 2.3rem;
   margin: 0.6rem auto;
   padding: 0.5rem;
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   font-size: 1rem;
   background: #D9D9D9;
@@ -933,7 +938,7 @@ a {
 }
 
 label {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   font-size: 1rem;
   color: grey;
@@ -958,7 +963,7 @@ label {
   border-radius: 0.3rem;
   padding: 0.5rem;
   margin: 0.6rem auto;
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   font-size: 1rem;
   color: grey;
@@ -977,7 +982,7 @@ label {
   height: 2.3rem;
   margin: 0.6rem auto;
   padding: 0.5rem;
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   font-size: 1rem;
   background: #D9D9D9;
@@ -991,7 +996,7 @@ input:active {
 }
 
 .payBtn {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 60%;
@@ -1011,7 +1016,7 @@ input:active {
 
 .nextBtn {
   content: "→";
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 20%;
@@ -1076,7 +1081,7 @@ input:active {
 }
 
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;

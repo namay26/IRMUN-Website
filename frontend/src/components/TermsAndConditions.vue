@@ -113,11 +113,15 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
 .terms-container {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: white;
 }

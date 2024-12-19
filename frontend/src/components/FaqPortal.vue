@@ -21,8 +21,12 @@ components: {
 
 <style scoped>
 @font-face {
-  font-family: "Frozito";
-  src: url("@/assets/fonts/Frozito.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
 }
 
 .ebportal {
@@ -91,18 +95,12 @@ components: {
 }
 
 .heading-primary {
-  font-family: "Frozito", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: 4.5vw;
-  background-image: url("@/assets/texture.jpg");
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .heading-sec {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5vw;
   color: aliceblue;
 }

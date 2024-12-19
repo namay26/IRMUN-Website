@@ -76,7 +76,7 @@ export default {};
 }
 
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;

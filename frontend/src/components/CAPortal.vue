@@ -27,6 +27,10 @@ components: {
 };
 </script>
 <style scoped>
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
 
 @font-face {
   font-family: "CollegiateBlackFLF";
@@ -82,12 +86,12 @@ components: {
 
 
 .heading-primary {
-  font-family: "CollegiateBlackFLF", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: 10vw;
 }
 
 .heading-sec {
-  font-family: "CollegiateBlackFLF", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: 9vw;
 
 }

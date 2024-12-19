@@ -2,12 +2,12 @@
   <div class="card">
     <img :src="image" alt="Card Image" class="card-image" />
     <div class="team-info textbox">
-    
+
               <h3>{{ name }}</h3>
               <p>{{ role }}</p>
               </div>
-            
-   
+
+
   </div>
 </template>
 
@@ -33,11 +33,17 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
+
 .card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+
   text-align: center;
   margin-top: 1rem;
   z-index: 2;
@@ -60,7 +66,7 @@ export default {
   position: relative;
   overflow: visible;
   object-fit: cover;
-  
+
   top:-60px;
 }
 
@@ -85,7 +91,7 @@ export default {
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  font-family: "Copperplate Gothic", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .team-info h3 {

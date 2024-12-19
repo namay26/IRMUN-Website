@@ -67,7 +67,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
   margin-top: 4rem;
@@ -94,7 +94,7 @@ export default {
 }
 
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;

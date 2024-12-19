@@ -21,6 +21,11 @@ export default {
 
 
 <style scoped>
+
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
 .landing-page-2 {
   display: flex;
   flex-direction: column;
@@ -49,7 +54,7 @@ export default {
 }
 
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;
@@ -74,7 +79,7 @@ export default {
 
 
 .learn-more {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
   position: absolute;
   bottom: 20px;

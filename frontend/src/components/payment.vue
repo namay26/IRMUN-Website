@@ -193,7 +193,7 @@ form {
   height: 3.6vh;
   margin: 2vw auto;
   padding: 0.5rem;
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8vw;
   background: #D9D9D9;
   border: none;
@@ -211,7 +211,7 @@ input:active {
 .payBtn,
 .payBtn2 {
 
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 60%;
@@ -291,7 +291,7 @@ input:active {
   font-weight: 500;
 }
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;

@@ -40,6 +40,10 @@ mounted(){
 
 
 <style scoped>
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
 .landing-page-2 {
   display: flex;
   flex-direction: column;
@@ -62,7 +66,7 @@ display: flex;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
     border-radius: 0.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 4rem;

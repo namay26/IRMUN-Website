@@ -51,7 +51,10 @@ export default {
 
 
 <style scoped>
-
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+}
 .register{
   height:10%;
   background-color: #1E262F;
@@ -98,7 +101,7 @@ padding-top:5px;
 
 .nav-links a {
   font-size: 0.9rem;
-  font-family: 'Copperplate Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: black;
   text-decoration: none;

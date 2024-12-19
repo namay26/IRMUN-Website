@@ -108,10 +108,14 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "Frozito";
-  src: url("@/assets/fonts/Frozito.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
 .faq-page {
   width: 100%;
   min-height: 100vh;
@@ -122,7 +126,7 @@ export default {
 }
 
 .faq-title {
-  font-family: "Assassin$", sans-serif;
+  font-family: "Gothic", sans-serif;
   color: white;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -140,7 +144,7 @@ export default {
 }
 
 .faq-header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 1.5rem;
   background: #1e262f;

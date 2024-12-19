@@ -95,7 +95,7 @@ export default {
       ],
 
       head:[
-          { image: divyanshImage, name: "DIVYANSH KOTHARI",role:"SECRETARY GENERAL" },
+          { image: divyanshImage, name: "Divyansh Kothari",role:"SECRETARY GENERAL" },
       ],
 
       adHead:[
@@ -145,6 +145,10 @@ export default {
   src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Gothic";
+  src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
 
 
 .container{
@@ -172,7 +176,7 @@ font-size: 4rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
-  font-family: "Assassin$", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3em;
   bottom: 20px;
   color:white;
@@ -192,7 +196,7 @@ font-size: 4rem;
 }
 
 .heading-primary {
-  font-family: "Assassin$", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
   color: white;
 
@@ -206,14 +210,12 @@ font-size: 4rem;
 display: grid;
   grid-template-columns: repeat(2, 1fr); /* Default for desktop */
   gap: 1rem;
-}
-
-
+} 
 
 .section3 .executives-list {
     text-align: center;
     font-size: 1.3  vw;
-    font-family: "Copperplate Gothic", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .executives-list {
   list-style: none;

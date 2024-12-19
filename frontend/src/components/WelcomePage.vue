@@ -32,8 +32,8 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "Frozito";
-  src: url("@/assets/fonts/Frozito.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
 
 a {
@@ -60,7 +60,7 @@ a {
 }
 
 .payment, .allotment {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 90%;
@@ -78,7 +78,7 @@ a {
 }
 
 .register {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   width: 90%;
@@ -123,7 +123,7 @@ a {
 }
 
 .header {
-  font-family: "Copperplate", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;
