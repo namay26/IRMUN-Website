@@ -30,8 +30,8 @@
             </div>
             <div class="choice">
               <input type="radio" id="noAccom" class="radioStyles" name="accommodation" :value="AccommodationChoices.NO"
-                v-model="user.accommodation">
-              <label for="noAccom" class="accomText">No, only participation without accommodation (Rs. 1600.00)</label>
+                v-model="user.accommodation" v-if="user.sex=='male'">
+              <label for="noAccom" class="accomText" v-if="user.sex=='male'">No, only participation without accommodation (Rs. 1600.00)</label>
             </div>
             <div class="termsCheckbox">
               <input type="checkbox" id="terms" v-model="termsAccepted" required>
