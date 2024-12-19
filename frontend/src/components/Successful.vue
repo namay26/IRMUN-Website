@@ -1,6 +1,5 @@
 <template>
   <div class="landing-page-2">
-
     <div class="container-2">
       <div class="header">Payment has been Processed Successfully !</div>
       <div class="wrapper">
@@ -15,13 +14,34 @@
             <li>Click on the check allotment status button</li>
             <li>Enter your MUNarchy ID and check your allotment ! </li>
           </ol>
-
         </div>
-
       </div>
     </div>
   </div>
+  <Footer />
 </template>
+
+
+<script>
+import router from "@/router";
+import Footer from "./Footer.vue";
+export default {
+  name: "Successful",
+  components: {
+    Footer
+  },
+  data() {
+    const username = sessionStorage.getItem("name");
+    return {username}
+  },
+  mounted() {
+    if (!localStorage.getItem("initiatePayment")) {
+      this.$router.push("/")
+    }; setTimeout(() => router.push('/'), 60000)
+  }
+};
+</script>
+
 
 <style scoped>
 .landing-page-2 {
@@ -187,19 +207,3 @@
 }
 </style>
 
-<script>
-import router from "@/router";
-export default {
-  name: "Successful",
-
-  data() {
-    const username = sessionStorage.getItem("name");
-    return {username}
-  },
-  mounted() {
-    if (!localStorage.getItem("initiatePayment")) {
-      this.$router.push("/")
-    }; setTimeout(() => router.push('/'), 60000)
-  }
-};
-</script>

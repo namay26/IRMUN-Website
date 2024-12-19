@@ -13,7 +13,31 @@
     </div>
     </div>
   </div>
+  <Footer />
 </template>
+
+
+<script>
+  import router from "@/router";
+  import Footer from "./Footer.vue";
+export default {
+  name: "Unsuccessful",
+  components: {
+    Footer
+  },
+  data(){
+    const username = sessionStorage.getItem("name");
+    return {username, router}
+  },
+mounted(){
+    if(!localStorage.getItem("initiatePayment")){
+      this.$router.push("/")
+    };
+    setTimeout(()=>router.push('/'),60000)
+  }
+};
+</script>
+
 
 <style scoped>
 .landing-page-2 {
@@ -164,20 +188,4 @@ display: flex;
 }
 </style>
 
-<script>
-  import router from "@/router";
-export default {
-  name: "Unsuccessful",
 
-  data(){
-    const username = sessionStorage.getItem("name");
-    return {username, router}
-  },
-mounted(){
-    if(!localStorage.getItem("initiatePayment")){
-      this.$router.push("/")
-    };
-    setTimeout(()=>router.push('/'),60000)
-  }
-};
-</script>
