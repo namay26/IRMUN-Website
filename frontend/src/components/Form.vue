@@ -715,7 +715,8 @@
                 </select>
               </div>
               <label class="heading">Reference Code (if any)</label>
-              <input type="text" class="formInputs" name="code" placeholder="Reference Code" v-model="user.code" required />
+              <input type="text" class="formInputs" name="code" placeholder="Reference Code" v-model="user.code" />
+              <div class="errorMessage" v-if="refCodeErrorStatus">The given reference code is invalid</div>
 
 
               <button type="submit" class="payBtn">Register</button>
@@ -746,6 +747,7 @@ import { IP } from "@/constants/portfolioIP";
 import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferencesAippm";
 import { portfolioPreferenceUNHRC } from "@/constants/portfolioPreferenceUNHRC";
 import { AISM } from "@/constants/portfolioAISM";
+import { refCodes } from "@/constants/refCodes";
 
 export default {
   name: "RegistrationForm",
@@ -768,6 +770,8 @@ export default {
       user: RegistrationModel,
       router,
       showSecondPart: false,
+      refCodes,
+      refCodeErrorStatus: false
     }
 
   },
@@ -794,6 +798,15 @@ export default {
         'sex', 'qualification', 'committee_pref',
         'portfolio_pref'
       ];
+      if(this.user.code != ''){
+        if(refCodes.indexOf(this.user.code) == -1){
+          this.refCodeErrorStatus = true
+        }else{
+          this.refCodeErrorStatus = false
+        }
+      }else{
+        this.refCodeErrorStatus = false
+      }
 
       for (let field of requiredFields) {
         if (field === 'committee_pref') {
@@ -823,6 +836,10 @@ export default {
           alert('Please enter a valid email address');
           return false;
         }
+        if(!/^\d+$/.test(this.user.experience)){
+          alert('Please enter a valid experience');
+          return false;
+        }
 
         return true;
       }
@@ -840,6 +857,10 @@ export default {
 a {
   all: unset;
   cursor: pointer;
+}
+.errorMessage{
+  color: red;
+  text-align: center;
 }
 
 .welcomePage {

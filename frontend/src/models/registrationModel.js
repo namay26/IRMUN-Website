@@ -39,4 +39,5 @@ export const RegistrationModel = {
   committee_pref: ['','',''],
   portfolio_pref: [['','',''],['','',''],['','','']],
   accommodation: null,
+  code: ''
 }
