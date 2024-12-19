@@ -8,6 +8,9 @@
         <h3 class="heading-tert">Presents</h3>
         <h1 class="heading-secondary">MUNarchy</h1>
         <h2 class="tagline">The Reign Of Diplomacy</h2>
+        <router-link class="register" to="/welcome" style="color: black ;" @click="closeMenu">
+        Register
+      </router-link>
       </div>
 
     </div>
@@ -58,6 +61,17 @@
 @font-face {
   font-family: "Gothic";
   src: url("@/assets/fonts/Gothic.ttf") format("truetype");
+}
+
+.register{
+  position: absolute;
+  left: 50%;
+  top: 30vw;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  padding: 1vw 2vw;
 }
 
 .main{
@@ -189,8 +203,12 @@
   .landing-page {
     min-height:45vh;
   }
+  .register{
+
+  }
 }
 
 
 
 </style>
+```

@@ -135,19 +135,54 @@
               <div>
                 <select v-model="user.portfolio_pref[0][0]" name="portPref1.1" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 1</option>
+
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -159,18 +194,51 @@
                 <select v-model="user.portfolio_pref[0][1]" name="portPref1.2" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 1</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -182,23 +250,58 @@
                 <select v-model="user.portfolio_pref[0][2]" name="portPref1.3" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 1</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[0])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
                 </select>
               </div>
+
+
 
               <label for="CPref2" class="heading"
                 v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">Committee
@@ -241,18 +344,51 @@
                 <select v-model="user.portfolio_pref[1][0]" name="portPref2.1" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -265,18 +401,51 @@
                 <select v-model="user.portfolio_pref[1][1]" name="portPref2.2" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -289,18 +458,51 @@
                 <select v-model="user.portfolio_pref[1][2]" name="portPref2.3" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[1])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -348,18 +550,51 @@
                 <select v-model="user.portfolio_pref[2][0]" name="portPref3.1" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -372,18 +607,51 @@
                 <select v-model="user.portfolio_pref[2][1]" name="portPref3.2" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -396,18 +664,51 @@
                 <select v-model="user.portfolio_pref[2][2]" name="portPref3.3" required class="formInputs">
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
-                    CommitteeChoices.DISEC,
-                    CommitteeChoices.SOCHUM,
-                    CommitteeChoices.UNHRC,
-                    CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesCountries" :value="option"
+                    CommitteeChoices.DISEC
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
+
+
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.UNHRC
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPreferenceUNHRC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.UNSC
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.SOCHUM
+                  ].includes(user.committee_pref[2])" v-for="option in portfolioPrefSOCHUM" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.IP
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -436,10 +737,15 @@ import {
   RegistrationModel
 } from "@/models/registrationModel";
 import Footer from "./Footer.vue";
-import { PortfolioPreferencesCountries } from "@/constants/portfolioPreferenceCountries";
 import { AxiosServices } from "@/services/api_services/api_services";
-import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferenceAippm";
 import router from "@/router/index"
+import { DISEC } from "@/constants/portfolioPreferenceDISEC";
+import { CCC } from "@/constants/porfolioCCC";
+import { portfolioPrefSOCHUM } from "@/constants/portfolioPrefSOCHUM";
+import { IP } from "@/constants/portfolioIP";
+import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferencesAippm";
+import { portfolioPreferenceUNHRC } from "@/constants/portfolioPreferenceUNHRC";
+import { AISM } from "@/constants/portfolioAISM";
 
 export default {
   name: "RegistrationForm",
@@ -451,9 +757,14 @@ export default {
       GenderChoices,
       QualificationChoices,
       AccommodationChoices,
-      PortfolioPreferencesCountries,
-      PortfolioPreferencesAippm,
       CommitteeChoices,
+      PortfolioPreferencesAippm,
+      IP,
+      portfolioPreferenceUNHRC,
+      portfolioPrefSOCHUM,
+      CCC,
+      DISEC,
+      AISM,
       user: RegistrationModel,
       router,
       showSecondPart: false,
