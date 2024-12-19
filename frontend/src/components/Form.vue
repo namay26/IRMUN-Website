@@ -413,6 +413,8 @@
                   </option>
                 </select>
               </div>
+              <label class="heading">Reference Code (if any)</label>
+              <input type="text" class="formInputs" name="code" placeholder="Reference Code" v-model="user.code" required />
 
 
               <button type="submit" class="payBtn">Register</button>
