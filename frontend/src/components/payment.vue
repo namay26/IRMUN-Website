@@ -20,7 +20,7 @@
               travelling and living outside the campus.
               The accommodation is limited; the team will allot hostels on a first-come, first-serve basis. Any later
               request a few days before the event to provide accommodation can't be guaranteed and is subject to
-              availability.
+              availability. Female participants can opt for the accommodation plan only, as per IITR administration guidelines.
               <br>
             </div>
             <div class="choice">
