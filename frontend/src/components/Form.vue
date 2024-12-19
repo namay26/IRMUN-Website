@@ -173,9 +173,16 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -223,9 +230,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -273,9 +286,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[0])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -361,9 +380,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -412,9 +437,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -463,9 +494,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[1])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -549,9 +586,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -600,9 +643,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -651,9 +700,15 @@
                   </option>
 
                   <option v-if="[
-                    CommitteeChoices.AIPPM,
-                    CommitteeChoices.AISM,
+                    CommitteeChoices.AIPPM
                   ].includes(user.committee_pref[2])" v-for="option in PortfolioPreferencesAippm" :value="option"
+                    :key="option">
+                    {{ option }}
+                  </option>
+
+                  <option v-if="[
+                     CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -688,6 +743,7 @@ import { portfolioPrefSOCHUM } from "@/constants/portfolioPrefSOCHUM";
 import { IP } from "@/constants/portfolioIP";
 import { PortfolioPreferencesAippm } from "@/constants/portfolioPreferencesAippm";
 import { portfolioPreferenceUNHRC } from "@/constants/portfolioPreferenceUNHRC";
+import { AISM } from "@/constants/portfolioAISM";
 
 export default {
   name: "RegistrationForm",
@@ -706,6 +762,7 @@ export default {
       portfolioPrefSOCHUM,
       CCC,
       DISEC,
+      AISM,
       user: RegistrationModel,
       router,
       showSecondPart: false,
