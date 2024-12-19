@@ -20,7 +20,8 @@
               travelling and living outside the campus.
               The accommodation is limited; the team will allot hostels on a first-come, first-serve basis. Any later
               request a few days before the event to provide accommodation can't be guaranteed and is subject to
-              availability. Female participants can opt for the accommodation plan only, as per IITR administration guidelines.
+              availability. <br />
+              <span class="read">Female participants can opt for the accommodation plan only, as per IITR administration guidelines.</span>
               <br>
             </div>
             <div class="choice">
@@ -190,7 +191,7 @@ form {
   justify-content: center;
   align-items: center;
   height: 3.6vh;
-  margin: 1rem auto;
+  margin: 2vw auto;
   padding: 0.5rem;
   font-family: "Copperplate", sans-serif;
   font-size: 0.8vw;
@@ -216,9 +217,9 @@ input:active {
   width: 60%;
   background: #1E262F;
   font-size: 1vw;
-  border-radius: 0.8rem;
+  border-radius: 0.8vw;
   text-align: center;
-
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 4vh;
@@ -286,12 +287,15 @@ input:active {
   justify-content: center;
   padding: 2vw;
 }
+.read{
+  font-weight: 500;
+}
 .header {
   font-family: "Copperplate", sans-serif;
   letter-spacing: 0.2rem;
   color: white;
   position: absolute;
-  top: -6%;
+  top: -3%;
   width: 60%;
   height: 5rem;
   display: flex;
@@ -356,6 +360,7 @@ input:active {
   .suc-container{
     margin-top: 20vh;
     width: 70vw;
+    margin-bottom: 20vh;
   }
   .qualColor{
     font-size: 1.5vw;
@@ -363,7 +368,7 @@ input:active {
   .choice{
     font-size: 1.5vw;
   }
-  #munid{
+  #munId{
     width: 90%;
   }
   .payBtn{
@@ -400,8 +405,20 @@ input:active {
   .choice{
     font-size: 2vw;
   }
-  #munid{
+  #munId{
     width: 90%;
+  }
+}
+
+@media (max-width: 1600px) {
+  #munId{
+    margin-top: 3vw;
+  }
+}
+
+@media (max-width: 1270px) {
+  #munId{
+    margin-top: 5vw;
   }
 }
 

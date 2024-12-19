@@ -92,6 +92,15 @@
         <li>
           The data may be shared with third parties to improve the quality of event/ promotional activities.
         </li>
+        <li>
+          Participants are required to accurately select their gender during registration. Any individual found choosing an incorrect gender option, whether to gain benefits or for any other reason, will face immediate expulsion from all committees, a non-refundable fine of ₹5000, and forfeiture of both paid delegation and registration fees, along with disciplinary action in accordance with IIT Roorkee's administrative policies.
+        </li>
+        <li>
+          Any participant found falsifying information during registration or otherwise will have their registration canceled, be expelled from all committees, incur a non-refundable fine of ₹5000, and face disciplinary action in accordance with IIT Roorkee's administrative policies.
+        </li>
+        <li>
+          Portfolios and preferences must be filled accurately, ensuring all preferences for both committees and portfolios are distinct. If an allotment cannot be made due to inaccuracies or duplication in preferences, no allotment will be processed, and no refund will be provided.
+        </li>
       </ul>
     </section>
   </div>

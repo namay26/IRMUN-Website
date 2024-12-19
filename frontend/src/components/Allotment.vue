@@ -5,7 +5,8 @@
       <div class="header">Allotment Status</div>
       <div class="wrapper">
       <div class="content">
-        Kindly recheck your allotment status later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in" />.
+        Kindly recheck your allotment status later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in">irmun@iitr.ac.in</a>or contact : <br />
+        Janhavi : +91 90217 74682
       </div>
 
     </div>

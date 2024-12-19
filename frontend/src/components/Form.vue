@@ -86,7 +86,8 @@
 
             <div v-if="showSecondPart">
               <button type="button" class="backBtn" @click="showSecondPart = false">↩</button>
-
+              <br />
+              <div class="not"> Preferences for committees and portfolios must be distinct. Priority will be given to the first preference, but allotment is not guaranteed if preferences are repeated. </div> <br />
               <label for="CPref1" class="heading">Committee Preference 1:</label>
               <div class="qualColor">
                 <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
@@ -906,6 +907,12 @@ a {
 .backBtn:hover i {
   transform: translateX(-5px);
   transition: transform 0.3s ease;
+}
+
+.not{
+  color:black;
+  font-size: 1vw;
+  font-weight: bold;
 }
 
 .formInputs {
