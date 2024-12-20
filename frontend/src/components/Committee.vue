@@ -2,7 +2,7 @@
   <div class="landing-page-2">
     <div class="container-2">
       <div class="header">COMMITTEES</div>
-      <img class="bgcom" src="@/assets/backgroundcom.png" />
+      <img class="bgcom" src="@/assets/com.png" />
       <button class="learn-more" @click="navigateToCommittee">LEARN MORE</button>
     </div>
   </div>
@@ -36,6 +36,7 @@ export default {
 
 .bgcom {
   width: 100%;
+  padding: 8vw;
 }
 
 
@@ -44,7 +45,7 @@ export default {
   position: relative;
   width: 70%;
   height: 70%;
-  background: white;
+  background:white url("@/assets/backgroundcom.png") no-repeat center center/cover;
   border-radius: 1.6rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -145,6 +146,13 @@ export default {
   }
   .landing-page-2{
     top: -10%;
+  }
+}
+
+@media (max-width: 485px) {
+  .bgcom{
+    padding: 6vw 10vw 20vw 10vw;
+
   }
 }
 </style>
