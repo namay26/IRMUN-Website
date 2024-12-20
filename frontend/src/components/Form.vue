@@ -87,7 +87,8 @@
             <div v-if="showSecondPart">
               <button type="button" class="backBtn" @click="showSecondPart = false">↩</button>
               <br />
-              <div class="not"> Preferences for committees and portfolios must be distinct. Priority will be given to the first preference, but allotment is not guaranteed if preferences are repeated. </div> <br />
+              <div class="not"> Preferences for committees and portfolios must be distinct. Priority will be given to
+                the first preference, but allotment is not guaranteed if preferences are repeated. </div> <br />
               <label for="CPref1" class="heading">Committee Preference 1:</label>
               <div class="qualColor">
                 <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
@@ -139,8 +140,7 @@
 
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -154,8 +154,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -168,8 +167,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -182,9 +180,8 @@
 
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -196,8 +193,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 1</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -211,8 +207,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -225,8 +220,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -238,9 +232,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -252,8 +245,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 1</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -267,8 +259,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -281,8 +272,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[0])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -294,9 +284,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -337,6 +326,12 @@
                     v-model="user.committee_pref[1]">
                   <label for="AISM2">{{ CommitteeChoices.AISM }}</label>
                 </div>
+
+                <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
+                  <input type="radio" id="IP1" class="radioStyles" name="CPref1" :value="CommitteeChoices.IP"
+                    v-model="user.committee_pref[0]">
+                  <label for="IP1">{{ CommitteeChoices.IP }}</label>
+                </div>
               </div>
 
               <label class="heading" v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">Portfolio Preference
@@ -346,8 +341,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -361,8 +355,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -375,8 +368,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -388,9 +380,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -403,8 +394,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -418,8 +408,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -432,8 +421,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -445,9 +433,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -460,8 +447,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 2</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -475,8 +461,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -489,8 +474,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -502,9 +486,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -543,6 +526,13 @@
                     v-model="user.committee_pref[2]">
                   <label for="AISM3">{{ CommitteeChoices.AISM }}</label>
                 </div>
+
+
+                <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
+                  <input type="radio" id="IP1" class="radioStyles" name="CPref1" :value="CommitteeChoices.IP"
+                    v-model="user.committee_pref[0]">
+                  <label for="IP1">{{ CommitteeChoices.IP }}</label>
+                </div>
               </div>
 
               <label class="heading" v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">Portfolio Preference
@@ -552,8 +542,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -567,8 +556,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -581,8 +569,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -594,9 +581,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -609,8 +595,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -624,8 +609,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -638,8 +622,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -651,9 +634,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -666,8 +648,7 @@
                   <option value="" disabled>Select your portfolio preference for committee 3</option>
                   <option v-if="[
                     CommitteeChoices.DISEC
-                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in DISEC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -681,8 +662,7 @@
 
                   <option v-if="[
                     CommitteeChoices.UNSC
-                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in CCC" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -695,8 +675,7 @@
 
                   <option v-if="[
                     CommitteeChoices.IP
-                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option"
-                    :key="option">
+                  ].includes(user.committee_pref[2])" v-for="option in IP" :value="option" :key="option">
                     {{ option }}
                   </option>
 
@@ -708,9 +687,8 @@
                   </option>
 
                   <option v-if="[
-                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
-                    :key="option">
+                    CommitteeChoices.AISM
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -781,11 +759,11 @@ export default {
       try {
         if (this.validateForm()) {
           console.log('Submitting user data:', this.user);
-          sessionStorage.setItem("name",this.user.name);
+          sessionStorage.setItem("name", this.user.name);
           const response = await AxiosServices("/api/register", this.user);
           console.log(response);
           alert(response["message"]);
-          localStorage.setItem("registration",true);
+          localStorage.setItem("registration", true);
           this.router.push('/reg-confirm');
         }
       } catch (error) {
@@ -799,13 +777,13 @@ export default {
         'sex', 'qualification', 'committee_pref',
         'portfolio_pref'
       ];
-      if(this.user.code != ''){
-        if(refCodes.indexOf(this.user.code) == -1){
+      if (this.user.code != '') {
+        if (refCodes.indexOf(this.user.code) == -1) {
           this.refCodeErrorStatus = true
-        }else{
+        } else {
           this.refCodeErrorStatus = false
         }
-      }else{
+      } else {
         this.refCodeErrorStatus = false
       }
 
@@ -837,7 +815,7 @@ export default {
           alert('Please enter a valid email address');
           return false;
         }
-        if(!/^\d+$/.test(this.user.experience)){
+        if (!/^\d+$/.test(this.user.experience)) {
           alert('Please enter a valid experience');
           return false;
         }
@@ -864,7 +842,8 @@ a {
   all: unset;
   cursor: pointer;
 }
-.errorMessage{
+
+.errorMessage {
   color: red;
   text-align: center;
 }
@@ -914,8 +893,8 @@ a {
   transition: transform 0.3s ease;
 }
 
-.not{
-  color:black;
+.not {
+  color: black;
   font-size: 1vw;
   font-weight: bold;
 }

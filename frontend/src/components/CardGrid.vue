@@ -70,15 +70,19 @@ import manmathImage from "@/assets/team/manmath.png";
     import avnishImage from "@/assets/team/avnish.png";
     import sahilImage from "@/assets/team/sahil.png";
     import sumedhImage from "@/assets/team/sumedh.png";
-    import pranjayImage from "@/assets/team/pranjay.png";
     import samarthImage from "@/assets/team/samarth.png";
-    import dakshImage from "@/assets/team/daksh.png";
     import kanwarImage from "@/assets/team/kanwar.png";
-    import sanchiImage from "@/assets/team/sanchi.png";
+    import namayImage from "@/assets/team/Namay.png";
     import bhavyaImage from "@/assets/team/bhavya.png";
     import divyanshImage from "@/assets/team/divyansh.png";
     import abyaImage from "@/assets/team/abya.png";
     import janhaviImage from "@/assets/team/Janhavi.png";
+    import vatsalImage from "@/assets/team/vatsal.png";
+    import AarushImage from "@/assets/team/Aarush.png";
+    import GauravImage from "@/assets/team/Gaurav.png";
+    import BudhayanImage from "@/assets/team/Budhayan.png";
+    import kanavImage from "@/assets/team/Kanav.png";
+    import PrishaImage from "@/assets/team/Prisha.png";
 
 export default {
   name: "CardGrid",
@@ -104,33 +108,31 @@ export default {
       ],
        managers: [
           { name: "Sahil Dagar", role: "Social Media & Design", image: sahilImage },
+          { name: "Bhavya Bhargav", role: "Marketing", image: bhavyaImage },
           { name: "Sumedh Gosavi", role: "Sponsorship", image: sumedhImage },
-          { name: "Pranjay Saini", role: "Sponsorship", image: pranjayImage },
           { name: "Samarth Jain", role: "Promotions", image: samarthImage },
-          { name: "Daksh Badjatiya", role: "Promotions", image: dakshImage },
           { name: "Kanwar Anmol Singh", role: "Promotions", image: kanwarImage },
-          { name: "Sanchi Sonawane", role: "Marketing", image: sanchiImage },
-          { name: "Bhavya Bhargav", role: "Marketing", image: bhavyaImage }
+          { name: "Gaurav Sonawane", role: "Marketing", image: GauravImage },
+          { name: "Aarush Agarwal", role: "Promotions", image: AarushImage },
+          { name: "Kanav Gupta", role: "Promotions", image: kanavImage },
+          { name: "Namay Rohatgi", role: "Marketing", image: namayImage },
+          { name: "Vatsal Tyagi", role: "Sponsorship", image: vatsalImage },
+          { name: "Prisha Sinha", role: "Promotions", image: PrishaImage },
+          { name: "Budhayan Chakraborty", role: "Marketing", image: BudhayanImage },
+
         ],
 
         executives: [
           "Aryan Rai",
-          "Budhayan Chakraborty",
           "Harsh Gupta",
-          "Kanav Gupta",
           "Kaushlandra Singh",
           "Kunj Mendapara",
           "Bipasha Gayary",
           "Kushagra Agrawal",
-          "Namay Rohatgi",
           "Priyanshu Chauhan",
           "V Anuj",
           "Veer Vardhan Singh",
-          "Vidhan Agarwal",
-          "Prisha Sinha",
-          "Vatsal Tyagi",
-          "Aarush Agrawal",
-
+          "Vidhan Agarwal"
         ],
     };
   },
@@ -210,7 +212,7 @@ font-size: 4rem;
 display: grid;
   grid-template-columns: repeat(2, 1fr); /* Default for desktop */
   gap: 1rem;
-} 
+}
 
 .section3 .executives-list {
     text-align: center;

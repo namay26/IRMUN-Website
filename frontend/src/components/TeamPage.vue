@@ -11,13 +11,11 @@
 
 
 <script>
-import TeamDesc from "./TeamDesc.vue";
 import CardGrid from "./CardGrid.vue";
 import Footer from "./Footer.vue";
 export default {
 name: "Team",
 components: {
-  TeamDesc,
   CardGrid,
   Footer
 },
@@ -28,7 +26,7 @@ components: {
 .team{
 max-width:100%;
 }
-.landing-page { 
+.landing-page {
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
