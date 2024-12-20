@@ -780,6 +780,7 @@ export default {
       if (this.user.code != '') {
         if (refCodes.indexOf(this.user.code) == -1) {
           this.refCodeErrorStatus = true
+          return false;
         } else {
           this.refCodeErrorStatus = false
         }
@@ -789,7 +790,6 @@ export default {
 
       for (let field of requiredFields) {
         if (field === 'committee_pref') {
-          // Check both committee preferences
           if (!this.user[field][0] || !this.user[field][1] || !this.user[field[2]]) {
             alert(`Please fill in both ${field} fields`);
             return false;
