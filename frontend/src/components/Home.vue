@@ -8,7 +8,7 @@
         <h3 class="heading-tert">Presents</h3>
         <h1 class="heading-secondary">MUNarchy</h1>
         <h2 class="tagline">The Reign Of Diplomacy</h2>
-        <router-link class="register" to="/welcome" style="color: black ;" @click="closeMenu">
+        <router-link class="register" to="/welcome" style="color: black ;">
         Register
       </router-link>
       </div>
@@ -72,6 +72,8 @@
   border-radius: 5px;
   font-size: 1.2vw;
   padding: 1vw 2vw;
+  display: none;
+
 }
 
 .main{
@@ -188,6 +190,11 @@
   }
 }
 
+@media (max-width: 920px) {
+  .register{
+    display: block;
+  }
+}
 @media (max-width: 425px) {
   .pine-bg{
     height: 40%;

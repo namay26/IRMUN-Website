@@ -595,7 +595,7 @@
 
                   <option v-if="[
                      CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -652,7 +652,7 @@
 
                   <option v-if="[
                      CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
@@ -709,7 +709,7 @@
 
                   <option v-if="[
                      CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option"
+                  ].includes(user.committee_pref[2])" v-for="option in AISM" :value="option"
                     :key="option">
                     {{ option }}
                   </option>
