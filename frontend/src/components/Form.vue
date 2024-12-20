@@ -328,9 +328,9 @@
                 </div>
 
                 <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
-                  <input type="radio" id="IP1" class="radioStyles" name="CPref1" :value="CommitteeChoices.IP"
-                    v-model="user.committee_pref[0]">
-                  <label for="IP1">{{ CommitteeChoices.IP }}</label>
+                  <input type="radio" id="IP2" class="radioStyles" name="CPref2" :value="CommitteeChoices.IP"
+                    v-model="user.committee_pref[1]">
+                  <label for="IP2">{{ CommitteeChoices.IP }}</label>
                 </div>
               </div>
 
@@ -381,7 +381,7 @@
 
                   <option v-if="[
                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -434,7 +434,7 @@
 
                   <option v-if="[
                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -487,7 +487,7 @@
 
                   <option v-if="[
                     CommitteeChoices.AISM
-                  ].includes(user.committee_pref[0])" v-for="option in AISM" :value="option" :key="option">
+                  ].includes(user.committee_pref[1])" v-for="option in AISM" :value="option" :key="option">
                     {{ option }}
                   </option>
                 </select>
@@ -529,9 +529,9 @@
 
 
                 <div v-if="user.qualification !== QualificationChoices.HIGH_SCHOOL">
-                  <input type="radio" id="IP1" class="radioStyles" name="CPref1" :value="CommitteeChoices.IP"
-                    v-model="user.committee_pref[0]">
-                  <label for="IP1">{{ CommitteeChoices.IP }}</label>
+                  <input type="radio" id="IP3" class="radioStyles" name="CPref3" :value="CommitteeChoices.IP"
+                    v-model="user.committee_pref[2]">
+                  <label for="IP3">{{ CommitteeChoices.IP }}</label>
                 </div>
               </div>
 
