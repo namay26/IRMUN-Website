@@ -24,8 +24,10 @@
       <div class="header">AISM</div>
       Discussing upon the caste based census with special emphasis on caste reservation
     </div>
-    <div class="container 7">
+    <div class="container 7" id="ip">
       <div class="header">IP</div>
+      <div class="ipcontent">The International Press Committee at MUNarchy empowers delegates to document, analyze, and creatively report on committee proceedings, blending journalism, interviews, and multimedia to uphold ethical and impactful storytelling. <br />
+      <a href="https://docs.google.com/document/d/1v_blfUjkeo1zClONjTAg_X-gb81R3bKqvQa9znMKeNg/edit?tab=t.0" target="_blank">Click Here!</a></div>
     </div>
   </div>
 </template>
@@ -43,7 +45,9 @@ export default {};
   src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
 
-
+.ipcontent{
+  width: 100%;
+}
 .bgcom {
   width: 100%;
 }
@@ -56,12 +60,18 @@ export default {};
   flex-direction: column;
 }
 
+#ip{
+  height: auto;
+  padding: 6vw;
+
+}
+
 .container {
   position: relative;
   width: 60vw;
   height: 400px;
   margin: 4rem;
-  background: #fff url("@/assets/combg.png") no-repeat center center scroll;
+  background: #fff url("@/assets/combg.png") no-repeat center center/cover;
   border-radius: 1.6vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -114,5 +124,18 @@ export default {};
     padding:0 1rem;
   }
 }
+
+@media (max-width: 1150px) {
+  #ip{
+    padding: 8vw;
+  }
+}
+
+@media (max-width: 485px) {
+  #ip{
+    padding: 12vw;
+  }
+}
+
 
 </style>

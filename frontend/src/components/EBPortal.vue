@@ -17,7 +17,7 @@
 import EBDesc from "./EBDesc.vue";
 import Footer from "./Footer.vue";
 export default {
-  name: "CAPortal",
+  name: "EBPortal",
   components: {
     EBDesc,
     Footer
@@ -48,7 +48,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180vh;
+  height: 100vh;
 }
 
 .ebbg {
