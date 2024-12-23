@@ -87,6 +87,7 @@ export default {
         this.containerStyleClass = "suc-container";
         const response = await AxiosServices('/api/checkStatus', postDict);
         const pay_status = response["pay_status"]
+        this.user.sex = response["sex"]
         console.log(pay_status);
 
         switch (pay_status) {
