@@ -88,7 +88,6 @@ export default {
         const response = await AxiosServices('/api/checkStatus', postDict);
         const pay_status = response["pay_status"]
         console.log(pay_status);
-
         switch (pay_status) {
           case true:
             this.visibilityStatus = [false, true, false]

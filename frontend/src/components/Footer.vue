@@ -25,14 +25,15 @@
     <div class="contacts">
     <h2>Contact Us </h2>
     <p class="contact">
-            Divyansh : +91 89496 08718<br />
+            Aarush : +91 99996 37376<br />
             Manmath : +91 77560 17385
 
           </p>
     </div>
 
-  </div>
 
+  </div>
+  <div class="tnc"><a href="/termsandconditions" target="_blank">Terms and Conditions</a></div>
 </template>
 
 <script>
@@ -47,7 +48,15 @@ components: {
 </script>
 
 <style scoped>
-
+.tnc{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #1D1D1D;
+  padding-bottom: 3vh;
+}
 .house{
 width:100%;
 }
