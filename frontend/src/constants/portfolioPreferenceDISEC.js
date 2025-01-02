@@ -17,7 +17,7 @@ export const DISEC = [
   "Micronesia", "Mongolia", "Morocco", "Mozambique", "Myanmar", "Namibia",
   "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Nigeria", "North Macedonia",
   "Norway", "Oman", "Pakistan", "Palau", "Panama", "Paraguay", "Peru", "Poland",
-  "Portugal", "Qatar", "Republic of the Congo", "Romania", "Rwanda",
+  "Portugal", "Qatar", "Republic of the Congo", "Romania", "Russian Federation", "Rwanda",
   "São Tomé and Príncipe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles",
   "Singapore", "Slovakia", "Slovenia", "Somalia", "South Africa", "South Korea",
   "Spain", "Sri Lanka", "Sudan", "Sweden", "Switzerland", "Syria",

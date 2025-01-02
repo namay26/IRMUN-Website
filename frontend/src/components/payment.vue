@@ -27,12 +27,12 @@
             <div class="choice">
               <input type="radio" id="yesAccom" class="radioStyles" name="accommodation"
                 :value="AccommodationChoices.YES" v-model="user.accommodation" required>
-              <label for="yesAccom" class="accomText">Yes, avail in-house accommodation (Rs. 3000.00)</label>
+              <label for="yesAccom" class="accomText">Yes, avail in-house accommodation (Rs. 3000.00 + 5.5% GST + 1% Commission)</label>
             </div>
             <div class="choice">
               <input type="radio" id="noAccom" class="radioStyles" name="accommodation" :value="AccommodationChoices.NO"
                 v-model="user.accommodation" v-if="user.sex=='male'">
-              <label for="noAccom" class="accomText" v-if="user.sex=='male'">No, only participation without accommodation (Rs. 1600.00)</label>
+              <label for="noAccom" class="accomText" v-if="user.sex=='male'">No, only participation without accommodation (Rs. 1600.00 + 5.5% GST + 1% Commission)</label>
             </div>
             <div class="termsCheckbox">
               <input type="checkbox" id="terms" v-model="termsAccepted" required>
@@ -87,6 +87,7 @@ export default {
         this.containerStyleClass = "suc-container";
         const response = await AxiosServices('/api/checkStatus', postDict);
         const pay_status = response["pay_status"]
+        this.user.sex = response["sex"]
         console.log(pay_status);
         switch (pay_status) {
           case true:
