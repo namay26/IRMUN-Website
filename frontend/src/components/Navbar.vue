@@ -15,6 +15,7 @@
       <router-link to="/ca-portal" @click="closeMenu">CA Portal</router-link>
       <router-link to="/eb-portal" @click="closeMenu">EB Portal</router-link>
       <router-link to="/committees" @click="closeMenu">Committees</router-link>
+      <router-link to="/sponsors" @click="closeMenu">Sponsors</router-link>
       <router-link to="/team" @click="closeMenu">Team</router-link>
       <router-link to="/faq" @click="closeMenu">FAQ</router-link>
       <a

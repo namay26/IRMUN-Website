@@ -14,6 +14,7 @@ import FaqPortal from "@/components/FaqPortal.vue";
 import RegistrationSuccesful from "@/components/registrationConfirmation.vue"
 import Allotment from "@/components/Allotment.vue";
 import AllotmentCheck from "@/components/AllotmentCheck.vue";
+import Sponsors from "@/components/Sponsors.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -30,7 +31,8 @@ const routes = [
   { path: "/faq", name: "FaqPortal", component: FaqPortal },
   {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful},
   {path: "/allotment", name: "Allotment", component: Allotment},
-  {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck}
+  {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck},
+  {path: "/sponsors", name: "Sponsors", component: Sponsors}
 
 ];
 
