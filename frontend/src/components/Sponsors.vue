@@ -9,6 +9,15 @@
       <div class="header">Our Collabs</div>
       <img class="bgcom" src="@/assets/collabs.png" />
     </div>
+
+    <div class="container-2 koreacon">
+      <div class="header">Endorsements</div>
+      <div class="cont">
+        <img class="bgkorea" src="@/assets/korea.jpg" />
+        <!-- <img class="korealogo" src="@/assets/koreanemb.png" /> -->
+        <span class="endorse">Endorsement from the esteemed Ambasssador of the Republic of Korea to India, Mr. Lee Seong-ho.</span>
+    </div>
+    </div>
   </div>
   <Footer />
 </template>
@@ -41,7 +50,30 @@ export default {
   src: url("@/assets/fonts/Gothic.ttf") format("truetype");
 }
 
+.cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+.bgkorea{
+  width: 50%;
+  height: 50%;
+  margin-right: 2rem;
+}
+
+.endorse{
+  color: black;
+  font-size: 1.4vw;
+  margin-left: 4vw;
+  text-align: center;
+}
+
+.koreacon{
+  height:auto;
+  padding: 8vh;
+}
 .landing-page-2 {
   display: flex;
   flex-direction: column;
@@ -52,7 +84,7 @@ export default {
 
 .bgcom {
   width: 100%;
-  padding: 8vw;
+  padding: 4vw;
 }
 
 
@@ -123,6 +155,21 @@ export default {
   .container-2 {
     margin-top: 10rem;
     ;
+  }
+}
+
+@media (max-width: 500px) {
+  .bgkorea{
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .cont{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  span{
+    margin-top: 2vh;
   }
 }
 
