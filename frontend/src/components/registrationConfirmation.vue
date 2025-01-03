@@ -11,7 +11,7 @@
         <ol>
           <li>Visit the website and click on the register button situated at the top right corner.</li>
           <li>Click on the check payment status button</li>
-          <li>Enter your MUNarchy ID and proceed with the payment ! </li>
+          <li>Enter your MUNarchy ID and proceed with the payment ! <span id="pay2">Pay within 20 minutes for successful registration.</span> </li>
         </ol>
 
       </div>
@@ -50,6 +50,10 @@ export default {
 
 
 <style scoped>
+
+#pay2{
+  font-weight: 800;
+}
 @font-face {
   font-family: "Roboto";
   src: url("@/assets/fonts/Roboto.ttf") format("truetype");
