@@ -5,8 +5,11 @@
       <div class="header">Allotment Status</div>
       <div class="wrapper">
       <div class="content">
-        Kindly recheck your allotment status later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in">irmun@iitr.ac.in</a>or contact : <br />
-        Janhavi : +91 90217 74682
+        Congratulations! After a thorough selection process, the secretariat is delighted to inform you that you have been allotted the following portfolio.
+        <div><span>Munarchy ID</span> : {munarchy ID}</div>
+        <div><span>Name</span> : {Name}</div>
+        <div><span>Committee</span> : {COmmittee}</div>
+        <div><span>Portfolio</span> : {Portofolio}</div>
       </div>
 
     </div>
@@ -19,7 +22,9 @@
   font-family: "Roboto";
   src: url("@/assets/fonts/Roboto.ttf") format("truetype");
 }
-
+span{
+  font-weight:bold;
+}
 
 .landing-page-5 {
   display: flex;
@@ -170,7 +175,7 @@ display: flex;
 
 <script>
 export default {
-  name: "allotment",
+  name: "allotmentdone",
 
 };
 </script>

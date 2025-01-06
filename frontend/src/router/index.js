@@ -12,9 +12,10 @@ import Unsuccessful from "@/components/Unsuccessful.vue";
 import TermsAndConditions from "@/components/TermsAndConditions.vue";
 import FaqPortal from "@/components/FaqPortal.vue";
 import RegistrationSuccesful from "@/components/registrationConfirmation.vue"
-import Allotment from "@/components/Allotment.vue";
+import AllotmentNotDone from "@/components/AllotmentNotDone.vue";
 import AllotmentCheck from "@/components/AllotmentCheck.vue";
 import Sponsors from "@/components/Sponsors.vue";
+import AllotmentDone from "@/components/AllotmentDone.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -30,9 +31,12 @@ const routes = [
   { path: "/termsandconditions", name: "TermsAndConditions", component: TermsAndConditions },
   { path: "/faq", name: "FaqPortal", component: FaqPortal },
   {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful},
-  {path: "/allotment", name: "Allotment", component: Allotment},
+  {path: "/allotmentnot", name: "AllotmentNotDone", component: AllotmentNotDone},
   {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck},
-  {path: "/sponsors", name: "Sponsors", component: Sponsors}
+  {path: "/sponsors", name: "Sponsors", component: Sponsors},
+  {path: "/alloted", name: "AllotmentDone", component: AllotmentDone}
+
+
 
 ];
 
