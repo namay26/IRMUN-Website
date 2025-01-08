@@ -6,10 +6,10 @@
       <div class="wrapper">
       <div class="content">
         Congratulations! After a thorough selection process, the secretariat is delighted to inform you that you have been allotted the following portfolio.
-        <div><span>Munarchy ID</span> : {munarchy ID}</div>
-        <div><span>Name</span> : {Name}</div>
-        <div><span>Committee</span> : {COmmittee}</div>
-        <div><span>Portfolio</span> : {Portofolio}</div>
+        <div><span>Munarchy ID</span> : {{ munarchy_id }}</div>
+        <div><span>Name</span> : {{ name }}</div>
+        <div><span>Committee</span> : {{ committee }}</div>
+        <div><span>Portfolio</span> : {{ portfolio }}</div>
       </div>
 
     </div>
@@ -176,6 +176,14 @@ display: flex;
 <script>
 export default {
   name: "allotmentdone",
-
+  data() {
+    const allotmentData = JSON.parse(localStorage.getItem('allotmentData'));
+    return {
+      name: allotmentData["name"],
+      committee: allotmentData["committee"],
+      portfolio: allotmentData["portfolio"],
+      munarchy_id: allotmentData["MUNARCHY_ID"]
+    }
+  }
 };
 </script>
