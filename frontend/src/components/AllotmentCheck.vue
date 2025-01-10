@@ -7,7 +7,9 @@
         <div class="content">
           <form @submit.prevent="handleSubmit">
             <input type="text" id="munId" name="name" placeholder="MUNarchy ID" v-model="munarchy_id" />
-            <button type="button" class="payBtn2" @click="redirectToAllotment">Check</button>
+            <span class="error-msg" v-if="isMunarchyIdValid">The given MUNarchy ID is not valid</span>
+            <span class="error-msg" v-if="isPaymentDone">Kindly pay the registration fee to confirm your registration so that we can proceed with your allotment</span>
+            <input type="submit" value="Check" class="payBtn2">
           </form>
         </div>
       </div>
@@ -19,10 +21,38 @@
 </template>
 
 <script>
+import { AxiosServices } from "@/services/api_services/api_services";
 export default {
+  name: "AllotmentCheck",
+  data() {
+    return {
+      munarchy_id: "",
+      isMunarchyIdValid: false,
+      isPaymentDone: false,
+    }
+  },
   methods: {
-    redirectToAllotment() {
-      this.$router.push('/allotment');
+    async handleSubmit() {
+      const postDict = {
+        MUNARCHY_ID: this.munarchy_id
+      };
+      try {
+        const response = await AxiosServices('/api/fetchAllotmentStatus', postDict);
+        localStorage.setItem('allotmentData', JSON.stringify(response));
+        this.$router.push({
+          name: 'AllotmentDone',
+        });
+      } catch (error) {
+        if(error.response.data.message === "The user with the given MUNARCHY_ID does not exist"){
+          this.isPaymentDone = false;
+          this.isMunarchyIdValid = true;
+        }else if(error.response.data.message === "The user with the given MUNARCHY_ID has not paid the registration fee"){
+          this.isPaymentDone = true;
+          this.isMunarchyIdValid = false;
+        }else{
+          this.$router.push({path: '/allotmentnot'});
+        }
+      }
     }
   }
 };
@@ -37,7 +67,10 @@ export default {
   font-family: "Frozito";
   src: url("@/assets/fonts/Frozito.ttf") format("truetype");
 }
-
+.error-msg{
+  color: red;
+  font-size: 0.8vw;
+}
 a {
   all: unset;
   cursor: pointer;
