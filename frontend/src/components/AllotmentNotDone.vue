@@ -5,7 +5,15 @@
       <div class="header">Allotment Status</div>
       <div class="wrapper">
       <div class="content">
+<<<<<<< Updated upstream:frontend/src/components/AllotmentNotDone.vue
+<<<<<<< Updated upstream:frontend/src/components/AllotmentNotDone.vue
         Allotments are underway, please check again later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in">irmun@iitr.ac.in</a>or contact : <br />
+=======
+        Kindly recheck your allotment status later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in">irmun@iitr.ac.in</a>or contact : <br />
+>>>>>>> Stashed changes:frontend/src/components/Allotment.vue
+=======
+        Kindly recheck your allotment status later. If you have any queries, please contact us at <a href="mailto: irmun@iitr.ac.in">irmun@iitr.ac.in</a>or contact : <br />
+>>>>>>> Stashed changes:frontend/src/components/Allotment.vue
         Janhavi : +91 90217 74682
       </div>
 

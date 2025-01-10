@@ -87,9 +87,6 @@
             <div v-if="showSecondPart">
               <button type="button" class="backBtn" @click="showSecondPart = false">↩</button>
               <br />
-              <div class="not"> Preferences for committees and portfolios must be distinct. Priority will be given to
-                the first preference, but allotment is not guaranteed if preferences are repeated. </div> <br />
-              <br />
               <div class="not"> Preferences for committees and portfolios must be distinct. Priority will be given to the first preference, but allotment is not guaranteed if preferences are repeated. </div> <br />
               <label for="CPref1" class="heading">Committee Preference 1:</label>
               <div class="qualColor">
@@ -897,12 +894,6 @@ a {
 
 .not{
   color:black;
-  font-size: 1vw;
-  font-weight: bold;
-}
-
-.not {
-  color: black;
   font-size: 1vw;
   font-weight: bold;
 }
