@@ -16,6 +16,7 @@ import AllotmentNotDone from "@/components/AllotmentNotDone.vue";
 import AllotmentCheck from "@/components/AllotmentCheck.vue";
 import Sponsors from "@/components/Sponsors.vue";
 import AllotmentDone from "@/components/AllotmentDone.vue";
+import Merch from "@/components/Merch.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -34,7 +35,10 @@ const routes = [
   {path: "/allotmentnot", name: "AllotmentNotDone", component: AllotmentNotDone},
   {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck},
   {path: "/sponsors", name: "Sponsors", component: Sponsors},
-  {path: "/alloted", name: "AllotmentDone", component: AllotmentDone}
+  {path: "/alloted", name: "AllotmentDone", component: AllotmentDone},
+  {path: "/merch", name: "Merch", component: Merch}
+
+
 
 
 
