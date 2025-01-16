@@ -31,8 +31,8 @@
             </div>
             <div class="choice">
               <input type="radio" id="noAccom" class="radioStyles" name="accommodation" :value="AccommodationChoices.NO"
-                v-model="user.accommodation" v-if="user.sex=='male'">
-              <label for="noAccom" class="accomText" v-if="user.sex=='male'">No, only participation without accommodation (Rs. 1600.00 + 5.5% GST + 1% Commission)</label>
+                v-model="user.accommodation" v-if="user.sex=='male' || user.qualification=='10th and below' || user.qualification=='11th and 12th'">
+              <label for="noAccom" class="accomText" v-if="user.sex=='male' || user.qualification=='10th and below' || user.qualification=='11th and 12th'">No, only participation without accommodation (Rs. 1600.00 + 5.5% GST + 1% Commission)</label>
             </div>
             <div class="termsCheckbox">
               <input type="checkbox" id="terms" v-model="termsAccepted" required>
