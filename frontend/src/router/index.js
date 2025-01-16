@@ -17,6 +17,7 @@ import AllotmentCheck from "@/components/AllotmentCheck.vue";
 import Sponsors from "@/components/Sponsors.vue";
 import AllotmentDone from "@/components/AllotmentDone.vue";
 import Merch from "@/components/Merch.vue";
+import RegisterisClosed from "@/components/RegisterisClosed.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -25,18 +26,19 @@ const routes = [
   { path: "/committees", name: "Committees", component: ComPortal },
   { path: "/team", name: "TeamPage", component: Team },
   { path: "/welcome", name: "WelcomePage", component: WelcomePage },
-  { path: "/payment", name: "Payment", component: Payment },
-  { path: "/register", name: "Form", component: Form },
-  { path: "/successful", name: "Successful", component: Successful },
-  { path: "/unsuccessful", name: "Unsuccessful", component: Unsuccessful },
+  // { path: "/payment", name: "Payment", component: Payment },
+  // { path: "/register", name: "Form", component: Form },
+  // { path: "/successful", name: "Successful", component: Successful },
+  // { path: "/unsuccessful", name: "Unsuccessful", component: Unsuccessful },
   { path: "/termsandconditions", name: "TermsAndConditions", component: TermsAndConditions },
   { path: "/faq", name: "FaqPortal", component: FaqPortal },
-  {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful},
+  // {path: "/reg-confirm", name: "RegistrationSuccessful", component: RegistrationSuccesful},
   {path: "/allotmentnot", name: "AllotmentNotDone", component: AllotmentNotDone},
   {path: "/allotment-check", name: "AllotmentCheck", component: AllotmentCheck},
   {path: "/sponsors", name: "Sponsors", component: Sponsors},
   {path: "/alloted", name: "AllotmentDone", component: AllotmentDone},
-  {path: "/merch", name: "Merch", component: Merch}
+  {path: "/merch", name: "Merch", component: Merch},
+  {path: "/register", name: "RegistrationClosed", component: RegisterisClosed}
 
 
 
